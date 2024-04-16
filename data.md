@@ -29,7 +29,7 @@ Quelle: https://github.com/kacebe/AtlantGIS
 
 Download zip-Archiv: https://github.com/kacebe/AtlantGIS/archive/refs/heads/master.zip
 
-AtlantGIS Ontologie und Linked Open Data: [Ontology](ontology/) [Linked Open Data](ontdoc/) [OGC API Features Endpoint](ontdoc/index.json)
+AtlantGIS Ontologie und Linked Open Data: [Ontology](ontology/) [Linked Open Data](data/) [OGC API Features Endpoint](ontdoc/index.json)
 
 QGIS- und R-Tutorials auf Basis von AtlantGIS:
 * http://i3mainz.github.io/qgis-caa2014/
