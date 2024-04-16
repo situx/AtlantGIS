@@ -19,7 +19,7 @@ jobs:
         metadatatable: true
         createnonNSPages: true
         ogcapifeatures: true
-        gh-folder: docs/ontdoc/ 
+        ghpagesfolder: docs/ontdoc/ 
 
   build:
 
