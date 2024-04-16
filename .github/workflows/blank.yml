@@ -9,7 +9,7 @@ jobs:
     with: 
         version: v017
         rdffilepath: linkeddata/rdf/atlantgis_small.ttl linkeddata/ontology/atlantgis.owl
-        docpath: data
+        docpath: docs
         prefixns: http://situx.github.io/AtlantGIS/data/
         prefixnsshort: atlantgis
         indexpages: true
@@ -19,7 +19,7 @@ jobs:
         metadatatable: true
         createnonNSPages: true
         ogcapifeatures: true
-        ghpagesfolder: data/ 
+        ghpagesfolder: docs/data/ 
 
   build:
 
