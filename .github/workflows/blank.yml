@@ -19,7 +19,9 @@ jobs:
         metadatatable: true
         createnonNSPages: true
         ogcapifeatures: true
-        ghpagesfolder: docs/ontdoc/ 
+        ghpagesfolder: ontdoc/ 
+
+
 
   build:
 
@@ -35,7 +37,16 @@ jobs:
          sudo pip3 install wheel pylode==2.13.2
          mkdir docs
          cd docs
-         pylode -i ../linkeddata/ontology/atlantgis.owl -o index
+         mkdir ontology/
+         cd ontology
+         pylode -i ../../linkeddata/ontology/atlantgis.owl -o index
+         echo "<HTML>
+    - name: Converts Markdown to HTML
+      uses: jaywcjlove/markdown-to-html-cli@main
+      with:
+        source: data.md
+        output: docs/index.html
+        github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
