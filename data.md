@@ -271,7 +271,6 @@ SELECT ?item ?wkt_geom WHERE {
 The AtlantGIS triplestore is part of the `SPARQLing Unicorn QGIS Plugin` (>v0.8) which helps to integrate Linked Data and triplestores into QGIS.
 
 * Install plugin: https://plugins.qgis.org/plugins/sparqlunicorn/
-* Install the required dependencies: https://github.com/sparqlunicorn/unicornQGISdepInstaller
 * More Info at: http://sparqlunicorn.link
 
 **Credits for LinkedData set**
