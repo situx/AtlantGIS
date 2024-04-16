@@ -29,7 +29,7 @@ Quelle: https://github.com/kacebe/AtlantGIS
 
 Download zip-Archiv: https://github.com/kacebe/AtlantGIS/archive/refs/heads/master.zip
 
-AtlantGIS Ontologie und Linked Open Data: http://atlantgis.squirrel.link/
+AtlantGIS Ontologie und Linked Open Data: https://research-squirrel-engineers.github.io/AtlantGIS_LOD/
 
 QGIS- und R-Tutorials auf Basis von AtlantGIS:
 * http://i3mainz.github.io/qgis-caa2014/
@@ -78,12 +78,12 @@ Frei erfundene Daten einer geophysikalischen Prospektion in dem 20 x 10 m große
 ![](https://i.imgur.com/oWX0nJL.png)
 
 
-`gdalinfo -mm -stats C:/Users/kai-christian.bruhn/Downloads/AtlantGIS-master/gettingstarted/geophys/geophys_excavation.tif`
+`gdalinfo -mm -stats .../AtlantGIS-master/gettingstarted/geophys/geophys_excavation.tif`
 Ausgabe
 ```
 Driver: GTiff/GeoTIFF 
-Files: C:/Users/kai-christian.bruhn/Downloads/AtlantGIS-master/gettingstarted/geophys/geophys_excavation.tif 
-C:/Users/kai-christian.bruhn/Downloads/AtlantGIS-master/gettingstarted/geophys/geophys_excavation.tif.aux.xml 
+Files: .../AtlantGIS-master/gettingstarted/geophys/geophys_excavation.tif 
+.../AtlantGIS-master/gettingstarted/geophys/geophys_excavation.tif.aux.xml 
 Size is 40, 20 
 Coordinate System is: 
 PROJCRS["WGS 84 / UTM zone 28N", 
