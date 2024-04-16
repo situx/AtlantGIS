@@ -21,8 +21,6 @@ jobs:
         ogcapifeatures: true
         ghpagesfolder: ontdoc/ 
 
-
-
   build:
 
     runs-on: ubuntu-latest
@@ -41,8 +39,8 @@ jobs:
          cd ontology
          pylode -i ../../linkeddata/ontology/atlantgis.owl -o index
     - name: Convert Markdown to HTML
-         uses: natescherer/markdown-to-html-with-github-style-action@v1
-         with:
+      uses: natescherer/markdown-to-html-with-github-style-action@v1
+      with:
            path: data.md
            outputpath: docs/index.html  
     - name: Deploy 🚀
