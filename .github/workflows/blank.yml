@@ -19,7 +19,7 @@ jobs:
         metadatatable: true
         createnonNSPages: true
         ogcapifeatures: true
-        ghpagesfolder: docs/data/ 
+        ghpagesfolder: data/ 
 
   build:
 
