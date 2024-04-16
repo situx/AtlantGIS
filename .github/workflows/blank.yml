@@ -11,8 +11,8 @@ name: Ontology Documentation CI
 on: [push]
 
 jobs:
-  build:
 
+  ontdoc:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     with: 
         version: v017
@@ -28,6 +28,8 @@ jobs:
         createnonNSPages: true
         ogcapifeatures: true
         gh-pages-folder: docs/ontdoc/ 
+
+  build:
 
     runs-on: ubuntu-latest
 
