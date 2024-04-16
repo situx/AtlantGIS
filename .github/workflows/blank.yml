@@ -3,14 +3,6 @@ name: Ontology Documentation CI
 on: [push]
 
 jobs:
-  build:
-
-
-name: Ontology Documentation CI
-
-on: [push]
-
-jobs:
 
   ontdoc:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
