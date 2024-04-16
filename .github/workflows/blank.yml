@@ -5,6 +5,30 @@ on: [push]
 jobs:
   build:
 
+
+name: Ontology Documentation CI
+
+on: [push]
+
+jobs:
+  build:
+
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    with: 
+        version: v017dev
+        rdffilepath: rdf/atlantgis_small.ttl rdf/atlantgis.owl
+        docpath: docs
+        prefixns: http://atlantgis.squirrel.link/data/
+        prefixnsshort: atlantgis
+        indexpages: true
+        createcollections: true
+        preferredlang: en
+        ghpages: true
+        metadatatable: true
+        createnonNSPages: true
+        ogcapifeatures: true
+        gh-pages-folder: docs/ontdoc/ 
+
     runs-on: ubuntu-latest
 
     steps:
