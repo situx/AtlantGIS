@@ -10,7 +10,7 @@ jobs:
         version: v017
         rdffilepath: linkeddata/rdf/atlantgis_small.ttl linkeddata/ontology/atlantgis.owl
         docpath: docs
-        prefixns: http://situx.github.io/AtlantGIS/data/
+        prefixns: http://atlantgis.squirrel.link/data/
         prefixnsshort: atlantgis
         indexpages: true
         createcollections: true
