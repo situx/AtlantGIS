@@ -34,6 +34,7 @@ jobs:
          sudo apt-get install gcc libpq-dev -y
          sudo apt-get install python3-dev python3-pip python3-venv python3-wheel -y
          sudo pip3 install wheel pylode==2.13.2
+         sleep 300
          mkdir docs
          cd docs
          mkdir ontology/
