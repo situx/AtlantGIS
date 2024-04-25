@@ -37,6 +37,7 @@ def parseGeoJSONCities(folder,foldername,g):
     # Reading from file
     walls_area = json.loads(f.read())
     g.add((URIRef(datans+foldername+"_city"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontns+"City")))
+    g.add((URIRef(ontns+"City"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef(ontns+"AtlantGIS_Classes")))
     g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
     g.add((URIRef(ontns+"hasBuilding"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#ObjectProperty")))
     g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2002/07/owl#DatatypeProperty")))
@@ -45,17 +46,19 @@ def parseGeoJSONCities(folder,foldername,g):
     for build in buildings["features"]:
         g.add((URIRef(datans+foldername+"_city"),URIRef(ontns+"hasBuilding"),URIRef(datans+foldername+"_city_building"+str(featcounter))))
         g.add((URIRef(datans+foldername+"_city_building"+str(featcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontns+"Building")))
+        g.add((URIRef(ontns+"Building"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Feature")))
         g.add((URIRef(datans+foldername+"_city_building"+str(featcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Building "+str(featcounter)+" of AtlantGIS City "+str(foldername),lang="en")))
         g.add((URIRef(datans+foldername+"_city_building"+str(featcounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(datans+foldername+"_city_building"+str(featcounter)+"_geom")))
         g.add((URIRef(datans+foldername+"_city_building"+str(featcounter)+"_geom"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
         g.add((URIRef(datans+foldername+"_city_building"+str(featcounter)+"_geom"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Building footprint of building "+str(featcounter)+" of AtlantGIS City "+str(foldername),lang="en")))
         wktgeom = shape(build["geometry"])
-        g.add((URIRef(datans+foldername+"_city_building"+str(featcounter)+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("<http://www.opengis.net/def/crs/EPSG/0/4326> "+str(wktgeom),datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))    
+        g.add((URIRef(datans+foldername+"_city_building"+str(featcounter)+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("<http://www.opengis.net/def/crs/EPSG/0/32628> "+str(wktgeom),datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))    
         featcounter+=1
     featcounter=1
     for sqa in squares:
         g.add((URIRef(datans+foldername+"_city"),URIRef(ontns+"hasSquare"),URIRef(datans+foldername+"_city_square"+str(featcounter))))
         g.add((URIRef(datans+foldername+"_city_square"+str(featcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontns+"Square")))
+        g.add((URIRef(ontns+"Square"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Feature")))
         g.add((URIRef(datans+foldername+"_city_square"+str(featcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Square "+str(featcounter)+" of AtlantGIS City "+str(foldername),lang="en")))
         g.add((URIRef(datans+foldername+"_city_square"+str(featcounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(datans+foldername+"_city_square"+str(featcounter)+"_geom")))
         wktgeom = shape(build["geometry"])
@@ -67,6 +70,7 @@ def parseGeoJSONCities(folder,foldername,g):
     for sqa in greens:
         g.add((URIRef(datans+foldername+"_city"),URIRef(ontns+"hasGreen"),URIRef(datans+foldername+"_city_green"+str(featcounter))))
         g.add((URIRef(datans+foldername+"_city_green"+str(featcounter)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontns+"Green")))
+        g.add((URIRef(ontns+"Green"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Feature")))
         g.add((URIRef(datans+foldername+"_city_green"+str(featcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Green "+str(featcounter)+" of AtlantGIS City "+str(foldername),lang="en")))
         g.add((URIRef(datans+foldername+"_city_green"+str(featcounter)),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(datans+foldername+"_city_green"+str(featcounter)+"_geom")))
         wktgeom = shape(build["geometry"])
@@ -85,11 +89,14 @@ def parseGeoJSONCities(folder,foldername,g):
         g.add((URIRef(datans+foldername+"_city_green"+str(featcounter)+"_geom"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Area of green "+str(featcounter)+" of AtlantGIS City "+str(foldername),lang="en")))
         g.add((URIRef(datans+foldername+"_city_green"+str(featcounter)+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktgeom,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
         featcounter+=1
+    g.add((URIRef(ontns+"CityWall"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Feature")))
     g.add((URIRef(datans+foldername+"_city_wall"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontns+"CityWall")))
     g.add((URIRef(datans+foldername+"_city_wall"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("City Wall of AtlantGIS City "+str(foldername),lang="en")))
     g.add((URIRef(datans+foldername+"_city_wall"),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(datans+foldername+"_city_wall_area")))
     g.add((URIRef(datans+foldername+"_city_wall_area"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("City Wall Area of AtlantGIS City "+str(foldername))))
     wktgeom = shape(walls_area["features"][0]["geometry"])
+    g.add((URIRef("http://www.opengis.net/ont/sf#Polygon"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+    g.add((URIRef("http://www.opengis.net/ont/sf#LineString"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
     g.add((URIRef(datans+foldername+"_city_wall_area"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#Polygon")))
     g.add((URIRef(datans+foldername+"_city_wall_area"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(wktgeom,datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
     g.add((URIRef(datans+foldername+"_city_wall"),URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"),URIRef(datans+foldername+"_city_wall_border")))
