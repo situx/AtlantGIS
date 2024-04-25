@@ -36,10 +36,12 @@ outStr = ""
 i = 0
 lines = []
 for index, row in data.iterrows():
-    lines.append("vesseltype:" + str(row['vesselShape']) + " " + "rdf:type" + " atlantgis:VesselType .")
-    lines.append("vesseltype:" + str(row['vesselShape']) + " " + "atlantgis:name" + " " + "'" + row['vesselName'] + "'@de" + ".")
-    lines.append("vesseltype:" + str(row['vesselShape']) + " " + "atlantgis:function" + " " + "'" + row['vesselFunction'] + "'@de" + ".")
-    lines.append("vesseltype:" + str(row['vesselShape']) + " " + "atlantgis:description" + " " + "'" + row['vesselDescription'] + "'@de" + ".")
+    lines.append("vesseltype:vesseltype" + str(row['vesselShape']) + " " + "rdf:type" + " atlantgis:VesselType .")
+    lines.append("vesseltype:vesseltype" + str(row['vesselShape']) + " " + "rdfs:label" + " " + "'" + row['vesselName'] + "'@de" + ".")
+    lines.append("vesseltype:vesseltype" + str(row['vesselShape']) + " " + "atlantgis:function" + " " + "vesselfunc:vesselfunc_"+row['vesselFunction']+ " .")
+    lines.append("vesselfunc:vesselfunc_"+row['vesselFunction']+ " " + "rdf:type" + " " + "atlantgis:VesselFunction .")
+    lines.append("vesselfunc:vesselfunc_"+row['vesselFunction']+ " " + "rdfs:label" + " " + "'" +row['vesselFunction'] +"'@de .")
+    lines.append("vesseltype:vesseltype" + str(row['vesselShape']) + " " + "skos:definition" + " " + "'" + row['vesselDescription'] + "'@de" + ".")
     lines.append("")
     i += 1
 
@@ -47,9 +49,11 @@ for index, row in data.iterrows():
 file = codecs.open(file_out, "w", "utf-8")
 prefixes = []
 prefixes.append("PREFIX atlantgis: <http://atlantgis.squirrel.link/ontology#>")
-prefixes.append("PREFIX vesseltype: <http://atlantgis.squirrel.link/vesseltype#>")
+prefixes.append("PREFIX vesseltype: <http://atlantgis.squirrel.link/data/vesseltype/>")
+prefixes.append("PREFIX vesselfunc: <http://atlantgis.squirrel.link/data/vesselfunction/>")
 prefixes.append("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>")
 prefixes.append("PREFIX owl: <http://www.w3.org/2002/07/owl#>")
+prefixes.append("PREFIX skos: <http://www.w3.org/2004/02/skos/core#>")
 prefixes.append("PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>")
 prefixes.append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>")
 prefixes.append("")

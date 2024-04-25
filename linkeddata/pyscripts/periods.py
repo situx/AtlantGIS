@@ -36,22 +36,23 @@ outStr = ""
 i = 0
 lines = []
 for index, row in data.iterrows():
-    lines.append("period:" + str(row['period_counter']) + " " + "rdf:type" + " atlantgis:Period .")
-    lines.append("period:" + str(row['period_counter']) + " " + "atlantgis:code" + " " + "'" + row['period_code'] + "'@en" + ".")
-    lines.append("period:" + str(row['period_counter']) + " " + "atlantgis:description" + " " + "'" + row['period_desc'] + "'@en" + ".")
+    lines.append("period:period" + str(row['period_counter']) + " " + "rdf:type" + " atlantgis:Period .")
+    lines.append("period:period" + str(row['period_counter']) + " " + "atlantgis:code" + " " + "'" + row['period_code'] + "'@en" + ".")
+    lines.append("period:period" + str(row['period_counter']) + " " + "rdfs:label" + " " + "'" + row['period_desc'] + "'@en" + ".")
     if row['period_before'] != 0:
-        lines.append("period:" + str(row['period_counter']) + " " + "atlantgis:period_before" + " period:" + str(row['period_before']) + " .")
+        lines.append("period:period" + str(row['period_before'])+ " " + "time:before " + "period:period" + str(row['period_counter']) + " .")
     if row['period_after'] != 0:
-        lines.append("period:" + str(row['period_counter']) + " " + "atlantgis:period_after" + " period:" + str(row['period_after']) + " .")
+        lines.append("period:period" + str(row['period_after'])+ " " + "time:after " + " period:period" + str(row['period_counter']) + " .")
     lines.append("")
 
 # write output file
 file = codecs.open(file_out, "w", "utf-8")
 prefixes = []
 prefixes.append("PREFIX atlantgis: <http://atlantgis.squirrel.link/ontology#>")
-prefixes.append("PREFIX period: <http://atlantgis.squirrel.link/period#>")
+prefixes.append("PREFIX period: <http://atlantgis.squirrel.link/data/period/>")
 prefixes.append("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>")
 prefixes.append("PREFIX owl: <http://www.w3.org/2002/07/owl#>")
+prefixes.append("PREFIX time: <http://www.w3.org/2006/time#>")
 prefixes.append("PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>")
 prefixes.append("PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>")
 prefixes.append("")
