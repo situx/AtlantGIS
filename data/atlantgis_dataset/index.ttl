@@ -45,14 +45,14 @@
     ns1:distinctBlankNodes 0,
         1 ;
     ns1:distinctIRIReferences 257,
-        105376 ;
+        105384 ;
     ns1:distinctLiterals 0 ;
     ns1:distinctRDFNodes 258,
-        105376 ;
+        105384 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-26T13:28:51"^^xsd:dateTime ;
+    dcterms:modified "2024-04-26T18:27:21"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -121,7 +121,7 @@
     void:distinctObjects 136,
         75552 ;
     void:distinctSubjects 100,
-        29777 ;
+        29785 ;
     void:entities 2,
         29750 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
@@ -192,7 +192,7 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
     void:triples 326,
-        167096 ;
+        167104 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,
