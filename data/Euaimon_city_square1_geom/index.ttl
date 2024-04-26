@@ -7,5 +7,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Area of square 1 of AtlantGIS City Euaimon"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    geo:asWKT "POLYGON ((466092.7795906579 3925545.327516824, 466100.9770777929 3925553.228591323, 466134.8218310354 3925526.103987604, 466120.5477640424 3925513.727996296, 466092.7795906579 3925545.327516824))"^^geo:wktLiteral .
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((466092.7795906579 3925545.327516824, 466100.9770777929 3925553.228591323, 466134.8218310354 3925526.103987604, 466120.5477640424 3925513.727996296, 466092.7795906579 3925545.327516824))"^^geo:wktLiteral .
 

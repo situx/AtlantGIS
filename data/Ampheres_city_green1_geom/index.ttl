@@ -7,5 +7,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Area of green 1 of AtlantGIS City Ampheres"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    geo:asWKT "POLYGON ((480341.7910053986 3927690.286728807, 480335.2822026275 3927655.732356248, 480320.8417302156 3927672.867823162, 480341.7910053986 3927690.286728807))"^^geo:wktLiteral .
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((480341.7910053986 3927690.286728807, 480335.2822026275 3927655.732356248, 480320.8417302156 3927672.867823162, 480341.7910053986 3927690.286728807))"^^geo:wktLiteral .
 
