@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Ampheres_city_building199_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 199 of AtlantGIS City Ampheres"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((480317.5202591084 3927529.359224747, 480324.7097681481 3927550.653405996, 480336.8442910109 3927553.118983128, 480337.9738445678 3927530.360838199, 480317.5202591084 3927529.359224747))"^^geo:wktLiteral .
+

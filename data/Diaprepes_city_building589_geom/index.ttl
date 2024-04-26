@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Diaprepes_city_building589_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 589 of AtlantGIS City Diaprepes"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((515358.6238293154 3948358.929243379, 515361.3910037596 3948342.888365522, 515346.9503325797 3948340.874217345, 515344.2575244196 3948356.484013948, 515358.6238293154 3948358.929243379))"^^geo:wktLiteral .
+

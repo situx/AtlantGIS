@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://atlantgis.squirrel.link/data/find/find128_minD_H_value> a ns1:Quantity,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Messwert der Höhe des minimalen Durchmessers von Fund 128"@de,
+        "Measurement value of the height of the minimum diameter of find 128"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    ns1:hasNumericalValue 1.4e+01 ;
+    ns1:hasUnit ns1:centimetre .
+

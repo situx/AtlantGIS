@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Mneseus_city_building895_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 895 of AtlantGIS City Mneseus"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((452806.3923591715 3939283.115815195, 452797.7810957641 3939299.384274701, 452799.6913399431 3939303.411058799, 452809.1635017595 3939305.377520094, 452816.5213085893 3939281.343569589, 452806.3923591715 3939283.115815195))"^^geo:wktLiteral .
+

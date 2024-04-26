@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Mestor_city_building470_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 470 of AtlantGIS City Mestor"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((506399.0390744798 3934096.63521747, 506403.2519605786 3934092.210428445, 506397.0257508338 3934086.361497531, 506402.2105603123 3934080.915893781, 506398.08256618 3934077.038039822, 506392.8977584385 3934082.483643474, 506388.6848758834 3934086.908432301, 506392.8128668659 3934090.786286436, 506399.0390744798 3934096.63521747))"^^geo:wktLiteral .
+

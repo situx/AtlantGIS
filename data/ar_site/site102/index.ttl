@@ -1,0 +1,13 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/ar_site/site102> a <http://atlantgis.squirrel.link/ontology#ArchaeologicalSite>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AtlantGIS Archaeological Site 102"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:hasGeometry <http://atlantgis.squirrel.link/data/ar_site/site102_geom> ;
+    time:hasTime <http://atlantgis.squirrel.link/data/period/period5> .
+

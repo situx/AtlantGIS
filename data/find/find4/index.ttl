@@ -1,0 +1,27 @@
+@prefix ns1: <http://atlantgis.squirrel.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/find/find4> a ns1:Find,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Fund 4"@de,
+        "Find 4"@en ;
+    ns1:bodenD <http://atlantgis.squirrel.link/data/find/find4_bodenD> ;
+    ns1:class "K" ;
+    ns1:feature "surface"@en ;
+    ns1:maxD <http://atlantgis.squirrel.link/data/find/find4_maxD> ;
+    ns1:maxD_H <http://atlantgis.squirrel.link/data/find/find4_maxD_H> ;
+    ns1:minD <http://atlantgis.squirrel.link/data/find/find4_minD> ;
+    ns1:minD_H <http://atlantgis.squirrel.link/data/find/find4_minD_H> ;
+    ns1:muendungsD <http://atlantgis.squirrel.link/data/find/find4_muendungsD> ;
+    ns1:muendungsH <http://atlantgis.squirrel.link/data/find/find4_muendungsH> ;
+    ns1:object "86" ;
+    ns1:sherd ns1:sherdtype_G ;
+    ns1:site <http://atlantgis.squirrel.link/data/site/E> ;
+    ns1:size "500" ;
+    ns1:vesselShape <http://atlantgis.squirrel.link/data/vesseltype/8> ;
+    ns1:wall <http://atlantgis.squirrel.link/data/find/find4_wall> ;
+    ns1:weight <http://atlantgis.squirrel.link/data/find/find4_weight> ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
+

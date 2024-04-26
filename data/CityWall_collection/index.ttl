@@ -1,0 +1,20 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/CityWall_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "CityWall Instances Collection"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    rdfs:member <http://atlantgis.squirrel.link/data/Ampheres_city_wall>,
+        <http://atlantgis.squirrel.link/data/Atlas_city_wall>,
+        <http://atlantgis.squirrel.link/data/Autochthon_city_wall>,
+        <http://atlantgis.squirrel.link/data/Azaes_city_wall>,
+        <http://atlantgis.squirrel.link/data/Diaprepes_city_wall>,
+        <http://atlantgis.squirrel.link/data/Elasippos_city_wall>,
+        <http://atlantgis.squirrel.link/data/Euaimon_city_wall>,
+        <http://atlantgis.squirrel.link/data/Eumelos_city_wall>,
+        <http://atlantgis.squirrel.link/data/Mestor_city_wall>,
+        <http://atlantgis.squirrel.link/data/Mneseus_city_wall> .
+

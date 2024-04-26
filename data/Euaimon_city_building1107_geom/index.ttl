@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Euaimon_city_building1107_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 1107 of AtlantGIS City Euaimon"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((466439.0157923973 3925165.531037777, 466443.1400684952 3925161.364266425, 466439.1246610829 3925157.442846799, 466442.1691338266 3925154.36700286, 466445.5832715328 3925150.917683896, 466441.821670664 3925147.244133119, 466438.5675931494 3925144.066226677, 466435.1534573887 3925147.515545608, 466432.10898638 3925150.591389517, 466427.9847139786 3925154.758160806, 466431.238788696 3925157.936067295, 466435.0003863308 3925161.609618128, 466439.0157923973 3925165.531037777))"^^geo:wktLiteral .
+

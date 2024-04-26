@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://atlantgis.squirrel.link/data/find/find135_minD_value> a ns1:Quantity,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Messwert für den minimalen Durchmesser von Fund 135 (cm)"@de,
+        "Measurement value for the minimum diameter of find 135 (cm)"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    ns1:hasNumericalValue 7.5e+00 ;
+    ns1:hasUnit ns1:centimetre .
+

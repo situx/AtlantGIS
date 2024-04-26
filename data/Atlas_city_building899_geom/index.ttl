@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Atlas_city_building899_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 899 of AtlantGIS City Atlas"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((473019.6766901559 3938936.479267097, 473022.7540894423 3938929.698450474, 473025.3560796415 3938923.965157925, 473021.4663595969 3938922.223410333, 473018.8643702192 3938927.956702156, 473014.417646955 3938925.965537564, 473009.0116283039 3938923.544817929, 473005.9342324522 3938930.325631515, 473011.3402497519 3938932.746352344, 473015.7869719055 3938934.737517918, 473019.6766901559 3938936.479267097))"^^geo:wktLiteral .
+

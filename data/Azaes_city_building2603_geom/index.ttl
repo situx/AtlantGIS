@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Azaes_city_building2603_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 2603 of AtlantGIS City Azaes"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((529283.1646816656 3940717.825243353, 529287.7072868361 3940719.169300194, 529289.3209717455 3940713.788187027, 529294.1702595442 3940715.222983643, 529298.9207835747 3940716.628558553, 529300.3637162223 3940711.816846904, 529301.5754801952 3940707.776005034, 529296.8249551398 3940706.370431692, 529295.6131916358 3940710.411272846, 529290.7639032677 3940708.976477099, 529286.2212969679 3940707.632421984, 529284.7783659785 3940712.444131097, 529283.1646816656 3940717.825243353))"^^geo:wktLiteral .
+

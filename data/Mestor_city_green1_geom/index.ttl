@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Mestor_city_green1_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Area of green 1 of AtlantGIS City Mestor"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "POLYGON ((506880.2952201648 3934282.373397309, 506888.2927039799 3934281.626565629, 506894.4847723974 3934281.048329483, 506893.7895908814 3934273.703291623, 506893.2157082625 3934267.639872, 506887.0236404829 3934268.218111511, 506887.5975228136 3934274.281529612, 506879.6000394507 3934275.028363674, 506880.2952201648 3934282.373397309))"^^geo:wktLiteral .
+

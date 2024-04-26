@@ -1,0 +1,27 @@
+@prefix ns1: <http://atlantgis.squirrel.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/find/find48> a ns1:Find,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Fund 48"@de,
+        "Find 48"@en ;
+    ns1:bodenD <http://atlantgis.squirrel.link/data/find/find48_bodenD> ;
+    ns1:class "K" ;
+    ns1:feature "3"@en ;
+    ns1:maxD <http://atlantgis.squirrel.link/data/find/find48_maxD> ;
+    ns1:maxD_H <http://atlantgis.squirrel.link/data/find/find48_maxD_H> ;
+    ns1:minD <http://atlantgis.squirrel.link/data/find/find48_minD> ;
+    ns1:minD_H <http://atlantgis.squirrel.link/data/find/find48_minD_H> ;
+    ns1:muendungsD <http://atlantgis.squirrel.link/data/find/find48_muendungsD> ;
+    ns1:muendungsH <http://atlantgis.squirrel.link/data/find/find48_muendungsH> ;
+    ns1:object "22" ;
+    ns1:sherd ns1:sherdtype_G ;
+    ns1:site <http://atlantgis.squirrel.link/data/site/F> ;
+    ns1:size "200" ;
+    ns1:vesselShape <http://atlantgis.squirrel.link/data/vesseltype/1> ;
+    ns1:wall <http://atlantgis.squirrel.link/data/find/find48_wall> ;
+    ns1:weight <http://atlantgis.squirrel.link/data/find/find48_weight> ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
+

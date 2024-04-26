@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/stream/stream67_geom> a <http://www.opengis.net/ont/sf#MultiLineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AtlantGIS Stream 67 Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asGeoJSON "<http://www.opengis.net/def/crs/EPSG/0/4326> {\"type\":\"MultiLineString\",\"coordinates\":[[[-15.339586637955758,35.53738826675142],[-15.341305990396101,35.53878392393404],[-15.347303060751702,35.53876680249431],[-15.349013474965194,35.53806160948655]]]}"^^geo:geojsonLiteral ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> MULTILINESTRING ((-15.339586637955758 35.53738826675142, -15.341305990396101 35.53878392393404, -15.347303060751702 35.53876680249431, -15.349013474965194 35.53806160948655))"^^geo:wktLiteral .
+

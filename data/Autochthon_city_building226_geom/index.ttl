@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Autochthon_city_building226_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 226 of AtlantGIS City Autochthon"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((459442.8849064889 3952362.17471863, 459447.482372425 3952367.247210646, 459452.2486215876 3952372.505927389, 459455.8578101727 3952369.27838278, 459451.0915596122 3952364.01966589, 459457.2367719957 3952358.524258173, 459452.6393024153 3952353.451765772, 459446.4940923271 3952358.947173731, 459442.8849064889 3952362.17471863))"^^geo:wktLiteral .
+

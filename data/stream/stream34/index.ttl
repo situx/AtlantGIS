@@ -1,0 +1,14 @@
+@prefix ns1: <http://atlantgis.squirrel.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://atlantgis.squirrel.link/data/stream/stream34> a ns1:Stream,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AtlantGIS Stream 34"@en ;
+    ns1:stream_cat 34 ;
+    ns1:stream_discharge 1e+01 ;
+    ns1:stream_value 42 ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
+

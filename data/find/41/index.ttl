@@ -1,0 +1,8 @@
+@prefix ns1: <http://atlantgis.squirrel.link/ontology#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/find/41> a <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    ns1:temperSize "VF" ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
+

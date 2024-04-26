@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Elasippos_city_building919_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 919 of AtlantGIS City Elasippos"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((492230.0020358589 3928700.185536057, 492235.7454721339 3928728.216559939, 492240.53556874 3928751.594904078, 492245.893631866 3928777.745376353, 492258.955941581 3928775.104715981, 492283.3097026807 3928770.181385851, 492277.9516232859 3928744.030875241, 492273.1615121344 3928720.65249683, 492292.4440861692 3928716.754308175, 492286.7006234655 3928688.723222025, 492281.2706244204 3928662.222151815, 492276.0322695117 3928636.656537732, 492256.7497211618 3928640.554786899, 492232.3960125575 3928645.478240713, 492237.6343489143 3928671.043811089, 492243.0643287271 3928697.544835992, 492230.0020358589 3928700.185536057))"^^geo:wktLiteral .
+

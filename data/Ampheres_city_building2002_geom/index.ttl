@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Ampheres_city_building2002_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 2002 of AtlantGIS City Ampheres"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((479787.3958861539 3928008.940238302, 479783.9918068196 3928010.916409364, 479777.6003560373 3928014.626838959, 479774.2278046589 3928016.584706043, 479777.5504826726 3928022.2318581, 479779.557120047 3928025.64229725, 479781.9231981635 3928029.663635804, 479785.2957516476 3928027.705769907, 479782.9296728848 3928023.684430988, 479789.3211264317 3928019.974002951, 479791.6872064234 3928023.995342562, 479795.091287883 3928022.019172698, 479792.7252072385 3928017.997832719, 479790.7185677188 3928014.58739236, 479787.3958861539 3928008.940238302))"^^geo:wktLiteral .
+

@@ -1,0 +1,22 @@
+@prefix ns1: <http://atlantgis.squirrel.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/find/find62> a ns1:Find,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Fund 62"@de,
+        "Find 62"@en ;
+    ns1:class "K" ;
+    ns1:feature "1"@en ;
+    ns1:minD <http://atlantgis.squirrel.link/data/find/find62_minD> ;
+    ns1:muendungsD <http://atlantgis.squirrel.link/data/find/find62_muendungsD> ;
+    ns1:object "78" ;
+    ns1:sherd ns1:sherdtype_R ;
+    ns1:site <http://atlantgis.squirrel.link/data/site/F> ;
+    ns1:size "200" ;
+    ns1:vesselShape <http://atlantgis.squirrel.link/data/vesseltype/6> ;
+    ns1:wall <http://atlantgis.squirrel.link/data/find/find62_wall> ;
+    ns1:weight <http://atlantgis.squirrel.link/data/find/find62_weight> ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
+

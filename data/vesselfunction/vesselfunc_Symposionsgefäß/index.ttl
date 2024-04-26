@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/vesselfunction/vesselfunc_Symposionsgefäß> a <http://atlantgis.squirrel.link/ontology#VesselFunction>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Symposionsgefäß"@de ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
+

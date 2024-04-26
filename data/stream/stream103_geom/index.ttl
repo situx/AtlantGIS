@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/stream/stream103_geom> a <http://www.opengis.net/ont/sf#MultiLineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AtlantGIS Stream 103 Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asGeoJSON "<http://www.opengis.net/def/crs/EPSG/0/4326> {\"type\":\"MultiLineString\",\"coordinates\":[[[-15.364146574063865,35.474293338772135],[-15.363293686156931,35.47499617128295],[-15.363306287477752,35.47779718135178],[-15.362453355468247,35.47850000777977],[-15.362462785653513,35.48060076435869],[-15.361609816849043,35.481303584717814],[-15.361616089548576,35.48270408870994],[-15.359910078122294,35.48410971129568],[-15.35992256629001,35.486910718199276]]]}"^^geo:geojsonLiteral ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> MULTILINESTRING ((-15.364146574063865 35.474293338772135, -15.363293686156931 35.47499617128295, -15.363306287477752 35.47779718135178, -15.362453355468247 35.47850000777977, -15.362462785653513 35.48060076435869, -15.361609816849043 35.481303584717814, -15.361616089548576 35.48270408870994, -15.359910078122294 35.48410971129568, -15.35992256629001 35.486910718199276))"^^geo:wktLiteral .
+

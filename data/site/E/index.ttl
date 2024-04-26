@@ -1,0 +1,20 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://atlantgis.squirrel.link/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://atlantgis.squirrel.link/data/site/E> a ns1:Site,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AtlantGIS Site E: Mneseus"@en,
+        "Μνασέας"@gr ;
+    ns1:groupid 3 ;
+    ns1:gruben 0 ;
+    ns1:keramik1 24 ;
+    ns1:keramik2 6 ;
+    ns1:keramik3 0 ;
+    ns1:silex 10 ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:hasGeometry <http://atlantgis.squirrel.link/data/site/E_geom> .
+

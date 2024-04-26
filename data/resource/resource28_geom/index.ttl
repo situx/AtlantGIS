@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/resource/resource28_geom> a <http://www.opengis.net/ont/sf#MultiPolygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AltlantGIS Resource 28 Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asGeoJSON "<http://www.opengis.net/def/crs/EPSG/0/4326> {\"type\":\"MultiPolygon\",\"coordinates\":[[[[-14.909089620668773,35.64605556496279],[-14.916441108145944,35.64800152835264],[-14.908873393995494,35.65319081805582],[-14.899467806408508,35.64497444269245],[-14.894927177918234,35.63967704278716],[-14.907359851165408,35.64151491622369],[-14.922927720274908,35.63394720207324],[-14.909089620668773,35.64605556496279]]]]}"^^geo:geojsonLiteral ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POLYGON ((-14.909089620668773 35.64605556496279, -14.916441108145944 35.64800152835264, -14.908873393995494 35.65319081805582, -14.899467806408508 35.64497444269245, -14.894927177918234 35.63967704278716, -14.907359851165408 35.64151491622369, -14.922927720274908 35.63394720207324, -14.909089620668773 35.64605556496279))"^^geo:wktLiteral .
+

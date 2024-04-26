@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/Eumelos_city_building1607_geom> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Building footprint of building 1607 of AtlantGIS City Eumelos"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POLYGON ((490826.4196175868 3941886.641559416, 490822.4284385969 3941888.821996212, 490825.2373660789 3941893.894986873, 490827.7229565824 3941898.384025234, 490829.7796938517 3941902.098545443, 490833.770875223 3941899.918110158, 490838.0802202425 3941897.563857337, 490836.0234815874 3941893.849336248, 490840.6342989663 3941891.33038354, 490838.1487058573 3941886.841343526, 490833.5378894089 3941889.360296825, 490829.2285459791 3941891.714550654, 490826.4196175868 3941886.641559416))"^^geo:wktLiteral .
+
