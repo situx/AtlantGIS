@@ -1,6 +1,4 @@
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -8,19 +6,9 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_atlantgis.squirrel.link_ontology_> a void:Linkset,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Linkset: atlantgis_dataset - :"@en,
-        "Linkset: atlantgis_dataset - atlantgis:"@en ;
-    void:linkPredicate <http://atlantgis.squirrel.link/ontology#archont>,
-        <http://atlantgis.squirrel.link/ontology#sherd>,
-        geo:style,
-        rdf:type,
-        owl:hasValue ;
-    void:objectsTarget <http://atlantgis.squirrel.link/ontology#>,
-        <http://atlantgis.squirrel.link/ontology/> ;
+    rdfs:label "Linkset: atlantgis_dataset - :"@en ;
+    void:linkPredicate owl:hasValue ;
+    void:objectsTarget <http://atlantgis.squirrel.link/ontology/> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 1,
-        2,
-        4,
-        136,
-        13976 .
+    void:triples 1 .
 
