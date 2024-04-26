@@ -92,7 +92,7 @@ for index, row in data.iterrows():
     lines.append("find:find" + str(i) + " " + "atlantgis:feature" + " " + "'" + row['feature'] + "'@en" + ".")
     lines.append("find:find" + str(i) + " " + "atlantgis:object" + " " + "'" + str(row['objectF']) + "'" + ".")
     lines.append("find:find" + str(i) + " " + "atlantgis:class" + " " + "'" + str(row['classF']) + "'" + ".")
-    lines.append("find:find" + str(i) + " " + "atlantgis:sherd" + " " + "atlantgis:sherdtype_" + str(row['sherd']) + "'" + ".")
+    lines.append("find:find" + str(i) + " " + "atlantgis:sherd" + " " + "atlantgis:sherdtype_" + str(row['sherd']) + ".")
     lines.append("find:find"+str(i)+"_quantity " + "rdf:type" + " om:Quantity .")
     lines.append("find:find"+str(i)+"_quantity " + "rdfs:label " + "'Anzahl von Objekten von Fund " + str(i) + "'@de .")
     lines.append("find:find"+str(i)+"_quantity " + "rdfs:label " + "'Quantity of objects of find " + str(i) + "'@en .")
