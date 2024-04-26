@@ -3,6 +3,6 @@
 
 <http://atlantgis.squirrel.link/data/find/83> a <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    ns1:temperSize "VF" ;
+    ns1:temperSize ns1:tsize_VF ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
 

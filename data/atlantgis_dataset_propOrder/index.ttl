@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: propOrder"@en ;
-    void:property <http://atlantgis.squirrel.link/ontology/propOrder> ;
+    void:property <http://atlantgis.squirrel.link/ontology#propOrder> ;
     void:triples 7 .
 

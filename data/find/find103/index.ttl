@@ -15,7 +15,7 @@
     ns1:object "82" ;
     ns1:sherd ns1:sherdtype_R ;
     ns1:site <http://atlantgis.squirrel.link/data/site/H> ;
-    ns1:size "200" ;
+    ns1:size ns1:size_less200200 ;
     ns1:vesselShape <http://atlantgis.squirrel.link/data/vesseltype/7> ;
     ns1:wall <http://atlantgis.squirrel.link/data/find/find103_wall> ;
     ns1:weight <http://atlantgis.squirrel.link/data/find/find103_weight> ;

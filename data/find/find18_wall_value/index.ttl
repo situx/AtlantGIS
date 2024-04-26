@@ -10,5 +10,5 @@
         "Measurement Value of wall thickness of find 18"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     ns1:hasNumericalValue 7e+00 ;
-    ns1:hasUnit ns1:centimetre .
+    ns1:unit ns1:centimetre .
 

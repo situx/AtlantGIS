@@ -7,7 +7,7 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Linkset: atlantgis_dataset - Ontology of Units of Measurement (om:)"@en ;
-    void:linkPredicate <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit>,
+    void:linkPredicate <http://www.ontology-of-units-of-measure.org/resource/om-2/unit>,
         rdf:type ;
     void:objectsTarget <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;

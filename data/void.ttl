@@ -37,24 +37,49 @@
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_atlantgis.squirrel.link_ontology_> a void:Linkset ;
     rdfs:label "Linkset: atlantgis_dataset - :"@en ;
-    void:linkPredicate owl:hasValue ;
-    void:objectsTarget <http://atlantgis.squirrel.link/ontology/> ;
+    void:linkPredicate <http://atlantgis.squirrel.link/ontology#archont>,
+        <http://atlantgis.squirrel.link/ontology#sherd>,
+        <http://atlantgis.squirrel.link/ontology#size>,
+        <http://atlantgis.squirrel.link/ontology#temperSize>,
+        geo:style,
+        rdf:type ;
+    void:objectsTarget <http://atlantgis.squirrel.link/ontology#> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 1 .
+    void:triples 2,
+        4,
+        132,
+        136,
+        13976 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_www.ontology-of-units-of-measure.org_resource_om-2_> a void:Linkset ;
+    rdfs:label "Linkset: atlantgis_dataset - Ontology of Units of Measurement (om:)"@en ;
+    void:linkPredicate <http://www.ontology-of-units-of-measure.org/resource/om-2/unit>,
+        rdf:type ;
+    void:objectsTarget <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
+    void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    void:triples 823,
+        1782 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_geosparql_> a void:Linkset ;
     rdfs:label "Linkset: atlantgis_dataset - The GeoSPARQL Ontology (gsp:)"@en ;
-    void:linkPredicate owl:onProperty ;
+    void:linkPredicate rdf:type ;
     void:objectsTarget geo: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 1 .
+    void:triples 10 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_www.w3.org_2002_07_owl_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - Web Ontology Language 2 Vocabulary (owl:)"@en ;
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_sf_> a void:Linkset ;
+    rdfs:label "Linkset: atlantgis_dataset - Simple Features Vocabulary (sf:)"@en ;
     void:linkPredicate rdf:type ;
-    void:objectsTarget owl: ;
+    void:objectsTarget <http://www.opengis.net/ont/sf#> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 1 .
+    void:triples 13823 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_www.w3.org_2004_02_skos_core_> a void:Linkset ;
+    rdfs:label "Linkset: atlantgis_dataset - skos:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget skos: ;
+    void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    void:triples 23 .
 
 <http://atlantgis.squirrel.link/data/brick_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary https://brickschema.org/schema/Brick# in atlantgis_dataset" ;
@@ -95,7 +120,7 @@
 <http://atlantgis.squirrel.link/data/geo_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.opengis.net/ont/geosparql# in atlantgis_dataset" ;
     voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    voaf:occurrences 2 .
+    voaf:occurrences 20 .
 
 <http://atlantgis.squirrel.link/data/odrl_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/odrl/2/ in atlantgis_dataset" ;
@@ -107,8 +132,7 @@
 
 <http://atlantgis.squirrel.link/data/owl_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2002/07/owl# in atlantgis_dataset" ;
-    voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    voaf:occurrences 2 .
+    voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
 
 <http://atlantgis.squirrel.link/data/prof_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/dx/prof/ in atlantgis_dataset" ;
@@ -140,7 +164,8 @@
 
 <http://atlantgis.squirrel.link/data/skos_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2004/02/skos/core# in atlantgis_dataset" ;
-    voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
+    voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    voaf:occurrences 46 .
 
 <http://atlantgis.squirrel.link/data/sosa_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/sosa/ in atlantgis_dataset" ;
@@ -189,67 +214,127 @@
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_ArchaeologicalSite> a void:Dataset ;
     rdfs:label "Class Partition: ArchaeologicalSite"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/ArchaeologicalSite> .
+    void:class <http://atlantgis.squirrel.link/ontology#ArchaeologicalSite> ;
+    void:entities 122 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Archont> a void:Dataset ;
     rdfs:label "Class Partition: Archont"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Archont> .
+    void:class <http://atlantgis.squirrel.link/ontology#Archont> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes> a void:Dataset ;
     rdfs:label "Class Partition: AtlantGIS_Classes"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/AtlantGIS_Classes> .
+    void:class <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Building> a void:Dataset ;
+    rdfs:label "Class Partition: Building"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#Building> ;
+    void:entities 13387 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_City> a void:Dataset ;
+    rdfs:label "Class Partition: City"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#City> ;
+    void:entities 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_CityWall> a void:Dataset ;
+    rdfs:label "Class Partition: CityWall"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#CityWall> ;
+    void:entities 10 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_CoastLine> a void:Dataset ;
     rdfs:label "Class Partition: CoastLine"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/CoastLine> .
+    void:class <http://atlantgis.squirrel.link/ontology#CoastLine> ;
+    void:entities 2 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Collection> a void:Dataset ;
+    rdfs:label "Class Partition: Collection"@en ;
+    void:class skos:Collection ;
+    void:entities 23 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Feature> a void:Dataset ;
     rdfs:label "Class Partition: Feature"@en ;
     void:class geo:Feature .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_FeatureCollection> a void:Dataset ;
+    rdfs:label "Class Partition: FeatureCollection"@en ;
+    void:class geo:FeatureCollection ;
+    void:entities 2 .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Find> a void:Dataset ;
     rdfs:label "Class Partition: Find"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Find> .
+    void:class <http://atlantgis.squirrel.link/ontology#Find> ;
+    void:entities 136 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_FindingsEntity> a void:Dataset ;
     rdfs:label "Class Partition: FindingsEntity"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/FindingsEntity> .
+    void:class <http://atlantgis.squirrel.link/ontology#FindingsEntity> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Geometry> a void:Dataset ;
     rdfs:label "Class Partition: Geometry"@en ;
     void:class geo:Geometry .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_GeometryCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GeometryCollection"@en ;
+    void:class geo:GeometryCollection ;
+    void:entities 8 .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Goldkupfererz> a void:Dataset ;
     rdfs:label "Class Partition: Goldkupfererz"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Goldkupfererz> .
+    void:class <http://atlantgis.squirrel.link/ontology#Goldkupfererz> ;
+    void:entities 12 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Green> a void:Dataset ;
+    rdfs:label "Class Partition: Green"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#Green> ;
+    void:entities 40 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_HumanEntity> a void:Dataset ;
     rdfs:label "Class Partition: HumanEntity"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/HumanEntity> .
+    void:class <http://atlantgis.squirrel.link/ontology#HumanEntity> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_LandType> a void:Dataset ;
     rdfs:label "Class Partition: LandType"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/LandType> .
+    void:class <http://atlantgis.squirrel.link/ontology#LandType> ;
+    void:entities 42 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_LineString> a void:Dataset ;
+    rdfs:label "Class Partition: LineString"@en ;
+    void:class <http://www.opengis.net/ont/sf#LineString> ;
+    void:entities 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Measure> a void:Dataset ;
+    rdfs:label "Class Partition: Measure"@en ;
+    void:class <http://www.ontology-of-units-of-measure.org/resource/om-2/Measure> ;
+    void:entities 823 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiLineString> a void:Dataset ;
     rdfs:label "Class Partition: MultiLineString"@en ;
-    void:class <http://www.opengis.net/ont/sf#MultiLineString> .
+    void:class <http://www.opengis.net/ont/sf#MultiLineString> ;
+    void:entities 119 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPoint> a void:Dataset ;
     rdfs:label "Class Partition: MultiPoint"@en ;
-    void:class <http://www.opengis.net/ont/sf#MultiPoint> .
+    void:class <http://www.opengis.net/ont/sf#MultiPoint> ;
+    void:entities 122 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPolygon> a void:Dataset ;
     rdfs:label "Class Partition: MultiPolygon"@en ;
-    void:class <http://www.opengis.net/ont/sf#MultiPolygon> .
+    void:class <http://www.opengis.net/ont/sf#MultiPolygon> ;
+    void:entities 85 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Period> a void:Dataset ;
     rdfs:label "Class Partition: Period"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Period> .
+    void:class <http://atlantgis.squirrel.link/ontology#Period> ;
+    void:entities 5 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Point> a void:Dataset ;
     rdfs:label "Class Partition: Point"@en ;
-    void:class <http://www.opengis.net/ont/sf#Point> .
+    void:class <http://www.opengis.net/ont/sf#Point> ;
+    void:entities 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Polygon> a void:Dataset ;
+    rdfs:label "Class Partition: Polygon"@en ;
+    void:class <http://www.opengis.net/ont/sf#Polygon> ;
+    void:entities 13477 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1554231> a void:Dataset ;
     rdfs:label "Class Partition: Q1554231"@en ;
@@ -287,159 +372,331 @@
     rdfs:label "Class Partition: Q839954"@en ;
     void:class <http://www.wikidata.org/entity/Q839954> .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Quantity> a void:Dataset ;
+    rdfs:label "Class Partition: Quantity"@en ;
+    void:class <http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity> ;
+    void:entities 823 .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Resource> a void:Dataset ;
     rdfs:label "Class Partition: Resource"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Resource> .
+    void:class <http://atlantgis.squirrel.link/ontology#Resource> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_SherdType> a void:Dataset ;
+    rdfs:label "Class Partition: SherdType"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#SherdType> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Silber> a void:Dataset ;
     rdfs:label "Class Partition: Silber"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Silber> .
+    void:class <http://atlantgis.squirrel.link/ontology#Silber> ;
+    void:entities 7 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Site> a void:Dataset ;
     rdfs:label "Class Partition: Site"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Site> .
+    void:class <http://atlantgis.squirrel.link/ontology#Site> ;
+    void:entities 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_SizeCategory> a void:Dataset ;
+    rdfs:label "Class Partition: SizeCategory"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#SizeCategory> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObject> a void:Dataset ;
     rdfs:label "Class Partition: SpatialObject"@en ;
     void:class geo:SpatialObject .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObjectCollection> a void:Dataset ;
+    rdfs:label "Class Partition: SpatialObjectCollection"@en ;
+    void:class geo:SpatialObjectCollection .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Square> a void:Dataset ;
+    rdfs:label "Class Partition: Square"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#Square> ;
+    void:entities 40 .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Stream> a void:Dataset ;
     rdfs:label "Class Partition: Stream"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Stream> .
+    void:class <http://atlantgis.squirrel.link/ontology#Stream> ;
+    void:entities 119 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Style> a void:Dataset ;
     rdfs:label "Class Partition: Style"@en ;
     void:class geo:Style .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_TemperSizeCategory> a void:Dataset ;
+    rdfs:label "Class Partition: TemperSizeCategory"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#TemperSizeCategory> .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemporalEntity> a void:Dataset ;
     rdfs:label "Class Partition: TemporalEntity"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/TemporalEntity> .
+    void:class <http://atlantgis.squirrel.link/ontology#TemporalEntity> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselFunction> a void:Dataset ;
+    rdfs:label "Class Partition: VesselFunction"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#VesselFunction> ;
+    void:entities 3 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselType> a void:Dataset ;
     rdfs:label "Class Partition: VesselType"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/VesselType> .
+    void:class <http://atlantgis.squirrel.link/ontology#VesselType> ;
+    void:entities 9 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Voronoi> a void:Dataset ;
     rdfs:label "Class Partition: Voronoi"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Voronoi> .
+    void:class <http://atlantgis.squirrel.link/ontology#Voronoi> ;
+    void:entities 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Weight> a void:Dataset ;
+    rdfs:label "Class Partition: Weight"@en ;
+    void:class <http://www.ontology-of-units-of-measure.org/resource/om-2/Weight> ;
+    void:entities 136 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes> a void:Dataset ;
     rdfs:label "Class Partition: Wikidata_Classes"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Wikidata_Classes> .
+    void:class <http://atlantgis.squirrel.link/ontology#Wikidata_Classes> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> a void:Dataset ;
     rdfs:label "Class Partition: Zinn"@en ;
-    void:class <http://atlantgis.squirrel.link/ontology/Zinn> .
+    void:class <http://atlantgis.squirrel.link/ontology#Zinn> ;
+    void:entities 12 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_comment> a void:Dataset ;
-    rdfs:label "Property Partition: comment"@en ;
-    void:property rdfs:comment ;
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_after> a void:Dataset ;
+    rdfs:label "Property Partition: after"@en ;
+    void:property time:after ;
+    void:triples 4 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_archont> a void:Dataset ;
+    rdfs:label "Property Partition: archont"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#archont> ;
+    void:triples 4 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_asGeoJSON> a void:Dataset ;
+    rdfs:label "Property Partition: asGeoJSON"@en ;
+    void:property geo:asGeoJSON ;
+    void:triples 317 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_asWKT> a void:Dataset ;
+    rdfs:label "Property Partition: asWKT"@en ;
+    void:property geo:asWKT ;
+    void:triples 13804 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_before> a void:Dataset ;
+    rdfs:label "Property Partition: before"@en ;
+    void:property time:before ;
+    void:triples 4 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_bodenD> a void:Dataset ;
+    rdfs:label "Property Partition: bodenD"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#bodenD> ;
+    void:triples 59 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_class> a void:Dataset ;
+    rdfs:label "Property Partition: class"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#class> ;
+    void:triples 136 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_code> a void:Dataset ;
+    rdfs:label "Property Partition: code"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#code> ;
     void:triples 5 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_contributor> a void:Dataset ;
-    rdfs:label "Property Partition: contributor"@en ;
-    void:property dc:contributor ;
-    void:triples 1 .
-
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_creator> a void:Dataset ;
-    rdfs:label "Property Partition: creator"@en ;
-    void:property dc:creator ;
-    void:triples 1 .
-
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_description> a void:Dataset ;
-    rdfs:label "Property Partition: description"@en ;
-    void:property dc:description ;
-    void:triples 1 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_definition> a void:Dataset ;
+    rdfs:label "Property Partition: definition"@en ;
+    void:property skos:definition ;
+    void:triples 60 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_dist_ttl> a adms:AssetDistribution ;
     rdfs:label "atlantgis_dataset TTL Distribution"@en ;
     dcat:downloadURL "https://situx.github.io/AtlantGIS/data//index.ttl"^^xsd:anyURI ;
     dcat:mediaType <http://www.w3.org/ns/formats/Turtle> .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_domain> a void:Dataset ;
-    rdfs:label "Property Partition: domain"@en ;
-    void:property rdfs:domain ;
-    void:triples 36 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_feature> a void:Dataset ;
+    rdfs:label "Property Partition: feature"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#feature> ;
+    void:triples 136 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_equivalentClass> a void:Dataset ;
-    rdfs:label "Property Partition: equivalentClass"@en ;
-    void:property owl:equivalentClass ;
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_function> a void:Dataset ;
+    rdfs:label "Property Partition: function"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#function> ;
     void:triples 9 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_groupid> a void:Dataset ;
+    rdfs:label "Property Partition: groupid"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#groupid> ;
+    void:triples 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_gruben> a void:Dataset ;
+    rdfs:label "Property Partition: gruben"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#gruben> ;
+    void:triples 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_hasBuilding> a void:Dataset ;
+    rdfs:label "Property Partition: hasBuilding"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#hasBuilding> ;
+    void:triples 13387 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_hasGeometry> a void:Dataset ;
+    rdfs:label "Property Partition: hasGeometry"@en ;
+    void:property geo:hasGeometry ;
+    void:triples 13803 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_hasGreen> a void:Dataset ;
+    rdfs:label "Property Partition: hasGreen"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#hasGreen> ;
+    void:triples 40 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_hasNumericalValue> a void:Dataset ;
+    rdfs:label "Property Partition: hasNumericalValue"@en ;
+    void:property <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> ;
+    void:triples 959 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_hasSquare> a void:Dataset ;
+    rdfs:label "Property Partition: hasSquare"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#hasSquare> ;
+    void:triples 40 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_hasTime> a void:Dataset ;
+    rdfs:label "Property Partition: hasTime"@en ;
+    void:property time:hasTime ;
+    void:triples 122 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasValue> a void:Dataset ;
     rdfs:label "Property Partition: hasValue"@en ;
-    void:property owl:hasValue ;
-    void:triples 1 .
+    void:property <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> ;
+    void:triples 823 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_keramik1> a void:Dataset ;
+    rdfs:label "Property Partition: keramik1"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#keramik1> ;
+    void:triples 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_keramik2> a void:Dataset ;
+    rdfs:label "Property Partition: keramik2"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#keramik2> ;
+    void:triples 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_keramik3> a void:Dataset ;
+    rdfs:label "Property Partition: keramik3"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#keramik3> ;
+    void:triples 10 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 67 .
+    void:triples 31564 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_onProperty> a void:Dataset ;
-    rdfs:label "Property Partition: onProperty"@en ;
-    void:property owl:onProperty ;
-    void:triples 1 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_maxD> a void:Dataset ;
+    rdfs:label "Property Partition: maxD"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#maxD> ;
+    void:triples 111 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_polygonStyle> a void:Dataset ;
-    rdfs:label "Property Partition: polygonStyle"@en ;
-    void:property geo:polygonStyle ;
-    void:triples 2 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_maxD_H> a void:Dataset ;
+    rdfs:label "Property Partition: maxD_H"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#maxD_H> ;
+    void:triples 64 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_propOrder> a void:Dataset ;
-    rdfs:label "Property Partition: propOrder"@en ;
-    void:property <http://atlantgis.squirrel.link/ontology/propOrder> ;
-    void:triples 7 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_member> a void:Dataset ;
+    rdfs:label "Property Partition: member"@en ;
+    void:property rdfs:member ;
+    void:triples 29601 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_publisher> a void:Dataset ;
-    rdfs:label "Property Partition: publisher"@en ;
-    void:property dc:publisher ;
-    void:triples 1 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_minD> a void:Dataset ;
+    rdfs:label "Property Partition: minD"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#minD> ;
+    void:triples 115 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_range> a void:Dataset ;
-    rdfs:label "Property Partition: range"@en ;
-    void:property rdfs:range ;
-    void:triples 36 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_minD_H> a void:Dataset ;
+    rdfs:label "Property Partition: minD_H"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#minD_H> ;
+    void:triples 55 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_rights> a void:Dataset ;
-    rdfs:label "Property Partition: rights"@en ;
-    void:property dc:rights ;
-    void:triples 1 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_muendungsD> a void:Dataset ;
+    rdfs:label "Property Partition: muendungsD"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#muendungsD> ;
+    void:triples 96 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_standard> a void:Dataset ;
-    rdfs:label "Property Partition: standard"@en ;
-    void:property <http://atlantgis.squirrel.link/ontology/standard> ;
-    void:triples 7 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_muendungsH> a void:Dataset ;
+    rdfs:label "Property Partition: muendungsH"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#muendungsH> ;
+    void:triples 59 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_object> a void:Dataset ;
+    rdfs:label "Property Partition: object"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#object> ;
+    void:triples 136 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_sherd> a void:Dataset ;
+    rdfs:label "Property Partition: sherd"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#sherd> ;
+    void:triples 136 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_silex> a void:Dataset ;
+    rdfs:label "Property Partition: silex"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#silex> ;
+    void:triples 10 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_site> a void:Dataset ;
+    rdfs:label "Property Partition: site"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#site> ;
+    void:triples 136 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_size> a void:Dataset ;
+    rdfs:label "Property Partition: size"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#size> ;
+    void:triples 132 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_cat> a void:Dataset ;
+    rdfs:label "Property Partition: stream_cat"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#stream_cat> ;
+    void:triples 129 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_discharge> a void:Dataset ;
+    rdfs:label "Property Partition: stream_discharge"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#stream_discharge> ;
+    void:triples 119 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_value> a void:Dataset ;
+    rdfs:label "Property Partition: stream_value"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#stream_value> ;
+    void:triples 119 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_style> a void:Dataset ;
     rdfs:label "Property Partition: style"@en ;
     void:property geo:style ;
-    void:triples 1 .
+    void:triples 2 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_subClassOf> a void:Dataset ;
     rdfs:label "Property Partition: subClassOf"@en ;
     void:property rdfs:subClassOf ;
-    void:triples 34 .
+    void:triples 9 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_subPropertyOf> a void:Dataset ;
-    rdfs:label "Property Partition: subPropertyOf"@en ;
-    void:property rdfs:subPropertyOf ;
-    void:triples 1 .
-
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_subject> a void:Dataset ;
-    rdfs:label "Property Partition: subject"@en ;
-    void:property dc:subject ;
-    void:triples 1 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_temperSize> a void:Dataset ;
+    rdfs:label "Property Partition: temperSize"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#temperSize> ;
+    void:triples 136 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_type> a void:Dataset ;
     rdfs:label "Property Partition: type"@en ;
     void:property rdf:type ;
-    void:triples 111 .
+    void:triples 29633 .
 
-<http://atlantgis.squirrel.link/data/atlantgis_dataset_versionInfo> a void:Dataset ;
-    rdfs:label "Property Partition: versionInfo"@en ;
-    void:property owl:versionInfo ;
-    void:triples 1 .
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_unit> a void:Dataset ;
+    rdfs:label "Property Partition: unit"@en ;
+    void:property <http://www.ontology-of-units-of-measure.org/resource/om-2/unit> ;
+    void:triples 823 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape> a void:Dataset ;
+    rdfs:label "Property Partition: vesselShape"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#vesselShape> ;
+    void:triples 136 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_wall> a void:Dataset ;
+    rdfs:label "Property Partition: wall"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#wall> ;
+    void:triples 128 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> a void:Dataset ;
+    rdfs:label "Property Partition: weight"@en ;
+    void:property <http://atlantgis.squirrel.link/ontology#weight> ;
+    void:triples 136 .
 
 <http://dbpedia.org/resource/Location> rdfs:label "Location"@en .
 
@@ -525,11 +782,11 @@ xsd: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ;
     voaf:usageInDataset xsd:_atlantgis_dataset_occ .
 
-skos: a voaf:Vocabulary ;
-    rdfs:label "skos Vocabulary"@en ;
-    vann:preferredNamespacePrefix "skos"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
-    voaf:usageInDataset skos:_atlantgis_dataset_occ .
+owl: a voaf:Vocabulary ;
+    rdfs:label "Web Ontology Language 2 Vocabulary"@en ;
+    vann:preferredNamespacePrefix "owl"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#"^^xsd:anyURI ;
+    voaf:usageInDataset owl:_atlantgis_dataset_occ .
 
 time: a voaf:Vocabulary ;
     rdfs:label "time Vocabulary"@en ;
@@ -637,28 +894,28 @@ geo: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/geosparql#"^^xsd:anyURI ;
     voaf:usageInDataset geo:_atlantgis_dataset_occ .
 
-owl: a voaf:Vocabulary ;
-    rdfs:label "Web Ontology Language 2 Vocabulary"@en ;
-    vann:preferredNamespacePrefix "owl"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.w3.org/2002/07/owl#"^^xsd:anyURI ;
-    voaf:usageInDataset owl:_atlantgis_dataset_occ .
+skos: a voaf:Vocabulary ;
+    rdfs:label "skos Vocabulary"@en ;
+    vann:preferredNamespacePrefix "skos"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
+    voaf:usageInDataset skos:_atlantgis_dataset_occ .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset> a void:Dataset,
         adms:Asset ;
     rdfs:label "atlantgis_dataset"@en ;
     vext:averageLiteralLength 0 ;
-    vext:averageObjectIRILength 47 ;
-    vext:averagePropertyIRILength 43 ;
-    vext:averageSubjectIRILength 35 ;
+    vext:averageObjectIRILength 76 ;
+    vext:averagePropertyIRILength 47 ;
+    vext:averageSubjectIRILength 62 ;
     vext:datatypes 0 ;
-    vext:distinctBlankNodes 1 ;
-    vext:distinctIRIReferences 257 ;
+    vext:distinctBlankNodes 0 ;
+    vext:distinctIRIReferences 105386 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 258 ;
+    vext:distinctRDFNodes 105386 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-26T10:47:42"^^xsd:dateTime ;
+    dcterms:modified "2024-04-26T10:56:28"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -670,19 +927,29 @@ owl: a voaf:Vocabulary ;
     void:classPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_ArchaeologicalSite>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Archont>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Building>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_City>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_CityWall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_CoastLine>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Collection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Feature>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_FeatureCollection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Find>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_FindingsEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Geometry>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_GeometryCollection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Goldkupfererz>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Green>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_HumanEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_LandType>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_LineString>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Measure>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiLineString>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPoint>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPolygon>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Period>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Point>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Polygon>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1554231>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1701967>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q17334923>,
@@ -692,47 +959,81 @@ owl: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q6428674>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q757267>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q839954>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Quantity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Resource>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_SherdType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Silber>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Site>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_SizeCategory>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObject>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObjectCollection>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Square>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Stream>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Style>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemperSizeCategory>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemporalEntity>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselFunction>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Voronoi>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Weight>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
-    void:classes 36 ;
+    void:classes 37 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
-    void:distinctObjects 136 ;
-    void:distinctSubjects 100 ;
-    void:entities 2 ;
+    void:distinctObjects 75562 ;
+    void:distinctSubjects 29777 ;
+    void:entities 29750 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
-    void:properties 21 ;
-    void:propertyPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_comment>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_contributor>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_creator>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_description>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_domain>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_equivalentClass>,
+    void:properties 47 ;
+    void:propertyPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_after>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_archont>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_asGeoJSON>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_asWKT>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_before>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_bodenD>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_class>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_code>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_definition>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_feature>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_function>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_groupid>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_gruben>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasBuilding>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasGeometry>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasGreen>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasNumericalValue>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasSquare>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasTime>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasValue>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_keramik1>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_keramik2>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_keramik3>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_label>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_onProperty>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_polygonStyle>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_propOrder>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_publisher>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_range>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_rights>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_standard>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_maxD>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_maxD_H>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_member>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_minD>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_minD_H>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_muendungsD>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_muendungsH>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_object>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_sherd>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_silex>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_site>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_size>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_cat>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_discharge>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_value>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_style>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_subClassOf>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_subPropertyOf>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_subject>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_temperSize>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_type>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_versionInfo> ;
-    void:triples 326 ;
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_unit>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
+    void:triples 167096 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,

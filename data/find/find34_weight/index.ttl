@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://atlantgis.squirrel.link/data/find/find34_weight> a ns1:Quantity,
+<http://atlantgis.squirrel.link/data/find/find34_weight> a ns1:Weight,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Gewicht von Fund 34 (g)"@de,
