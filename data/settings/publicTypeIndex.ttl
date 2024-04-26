@@ -7,6 +7,9 @@
 <http://atlantgis.squirrel.link/ontology#ArchaeologicalSite> a owl:Class ;
     rdfs:subClassOf <http://atlantgis.squirrel.link/ontology#Site> .
 
+<http://atlantgis.squirrel.link/ontology#Archont> a owl:Class ;
+    rdfs:subClassOf <http://atlantgis.squirrel.link/ontology#HumanEntity> .
+
 <http://atlantgis.squirrel.link/ontology#CoastLine> a owl:Class ;
     rdfs:subClassOf [ a owl:Class ],
         geo:Feature .
@@ -42,6 +45,8 @@
 void:Dataset a owl:Class .
 
 void:Linkset a owl:Class .
+
+geo:Style a owl:Class .
 
 <http://www.opengis.net/ont/sf#MultiLineString> a owl:Class ;
     rdfs:subClassOf geo:Geometry .
@@ -107,27 +112,20 @@ owl:Restriction a owl:Class .
         ns1:TypeIndex,
         "Public Type Index"@en ;
     rdfs:comment "This Document contains a list of links to other Documents, along with the type of data that is to be included in those Documents"@en ;
-    rdfs:member <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Ampheres>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#ArchaeologicalSite>,
+    rdfs:member <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#ArchaeologicalSite>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Archont>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#AtlantGIS_Classes>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Atlas>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Autochthon>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Azaes>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#CoastLine>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Diaprepes>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Elasippos>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Euaimon>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Eumelos_Gadeiros>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Feature>,
+        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Feature_suniv1_>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Find>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#FindingsEntity>,
+        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#FindingsEntity_suniv1_>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Geometry>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Goldkupfererz>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#HumanEntity>,
+        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#HumanEntity_suniv1_>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#LandType>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Mestor>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Mneseus>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#MultiLineString>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#MultiPoint>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#MultiPolygon>,
@@ -145,20 +143,15 @@ owl:Restriction a owl:Class .
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Resource>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Silber>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Site>,
+        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Site_suniv1_>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#SpatialObject>,
+        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#SpatialObject_suniv1_>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Stream>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Style>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#TemporalEntity>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#VesselType>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Voronoi>,
         <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Wikidata_Classes>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Zinn>,
-        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#nonns_CoastLine_Style.html> .
-
-geo:Style a owl:Class .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Ampheres> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Ampheres> .
+        <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Zinn> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#ArchaeologicalSite> ns1:forClass <http://atlantgis.squirrel.link/ontology#Site> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//ArchaeologicalSite> .
@@ -169,38 +162,23 @@ geo:Style a owl:Class .
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#AtlantGIS_Classes> ns1:forClass <#> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//AtlantGIS_Classes> .
 
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Atlas> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Atlas> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Autochthon> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Autochthon> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Azaes> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Azaes> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#CoastLine> ns1:forClass <#> ;
+<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#CoastLine> ns1:forClass geo:Feature ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//CoastLine> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Diaprepes> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Diaprepes> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Elasippos> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Elasippos> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Euaimon> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Euaimon> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Eumelos_Gadeiros> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Eumelos_Gadeiros> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Feature> ns1:forClass geo:SpatialObject ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//Feature> .
+
+<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Feature_suniv1_> ns1:forClass geo:SpatialObject ;
+    ns1:instance <https://situx.github.io/AtlantGIS/data//Feature_suniv1_> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Find> ns1:forClass <http://atlantgis.squirrel.link/ontology#FindingsEntity> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//Find> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#FindingsEntity> ns1:forClass <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//FindingsEntity> .
+
+<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#FindingsEntity_suniv1_> ns1:forClass <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> ;
+    ns1:instance <https://situx.github.io/AtlantGIS/data//FindingsEntity_suniv1_> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Geometry> ns1:forClass geo:SpatialObject ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//Geometry> .
@@ -211,14 +189,11 @@ geo:Style a owl:Class .
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#HumanEntity> ns1:forClass <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//HumanEntity> .
 
+<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#HumanEntity_suniv1_> ns1:forClass <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> ;
+    ns1:instance <https://situx.github.io/AtlantGIS/data//HumanEntity_suniv1_> .
+
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#LandType> ns1:forClass geo:Feature ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//LandType> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Mestor> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Mestor> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Mneseus> ns1:forClass <http://atlantgis.squirrel.link/ontology#Archont> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Mneseus> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#MultiLineString> ns1:forClass geo:Geometry ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//MultiLineString> .
@@ -271,14 +246,17 @@ geo:Style a owl:Class .
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Site> ns1:forClass geo:Feature ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//Site> .
 
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#SpatialObject> ns1:forClass <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> ;
+<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Site_suniv1_> ns1:forClass geo:Feature ;
+    ns1:instance <https://situx.github.io/AtlantGIS/data//Site_suniv1_> .
+
+<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#SpatialObject> ns1:forClass <#> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//SpatialObject> .
+
+<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#SpatialObject_suniv1_> ns1:forClass <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> ;
+    ns1:instance <https://situx.github.io/AtlantGIS/data//SpatialObject_suniv1_> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Stream> ns1:forClass geo:Feature ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//Stream> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Style> ns1:forClass <#> ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//Style> .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#TemporalEntity> ns1:forClass <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//TemporalEntity> .
@@ -294,9 +272,6 @@ geo:Style a owl:Class .
 
 <https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#Zinn> ns1:forClass <http://atlantgis.squirrel.link/ontology#Resource> ;
     ns1:instance <https://situx.github.io/AtlantGIS/data//Zinn> .
-
-<https://situx.github.io/AtlantGIS/data//settings/publicTypeIndex.ttl#nonns_CoastLine_Style.html> ns1:forClass geo:Style ;
-    ns1:instance <https://situx.github.io/AtlantGIS/data//nonns_CoastLine_Style.html> .
 
 <http://atlantgis.squirrel.link/ontology#Find> a owl:Class ;
     rdfs:subClassOf <http://atlantgis.squirrel.link/ontology#FindingsEntity> .
@@ -319,13 +294,10 @@ geo:SpatialObject a owl:Class ;
 <http://atlantgis.squirrel.link/ontology#Resource> a owl:Class ;
     rdfs:subClassOf geo:Feature .
 
-<http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> a owl:Class .
-
 geo:Geometry a owl:Class ;
     rdfs:subClassOf geo:SpatialObject .
 
-<http://atlantgis.squirrel.link/ontology#Archont> a owl:Class ;
-    rdfs:subClassOf <http://atlantgis.squirrel.link/ontology#HumanEntity> .
+<http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> a owl:Class .
 
 geo:Feature a owl:Class ;
     rdfs:subClassOf geo:SpatialObject .

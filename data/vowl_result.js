@@ -2586,11 +2586,11 @@ var vowlresult={
   },
   {
    "id": 88,
-   "iri": "n3451f86ebc764ae78217e2d4158fe3e8b1",
-   "baseIRI": "n3451f86ebc764ae78217e2d4158fe3e8b",
+   "iri": "n726aedeb711b4c8b9a23e5d3ccf58bf0b1",
+   "baseIRI": "n726aedeb711b4c8b9a23e5d3ccf58bf0b",
    "instances": 0,
    "label": {
-    "IRI-based": "n3451f86ebc764ae78217e2d4158fe3e8b1"
+    "IRI-based": "n726aedeb711b4c8b9a23e5d3ccf58bf0b1"
    },
    "annotations": {},
    "range": [],

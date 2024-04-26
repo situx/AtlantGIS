@@ -56,13 +56,5 @@ var minivowlresult={
    "uri": "http://www.opengis.net/ont/geosparql#Style"
   }
  ],
- "links": [
-  {
-   "source": 6,
-   "target": 9,
-   "valueTo": "hasValue",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2002/07/owl#hasValue"
-  }
- ]
+ "links": []
 }
