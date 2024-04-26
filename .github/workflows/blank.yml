@@ -8,7 +8,7 @@ jobs:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     with: 
         version: v018
-        rdffilepath: linkeddata/rdf/atlantgis_small.ttl linkeddata/ontology/atlantgis.owl
+        rdffilepath: linkeddata/ontology/atlantgis.ttl linkeddata/rdf/atlantgis_small.ttl 
         docpath: docs
         prefixns: http://atlantgis.squirrel.link/data/
         prefixnsshort: atlantgis
