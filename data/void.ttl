@@ -65,7 +65,7 @@
     void:linkPredicate rdf:type ;
     void:objectsTarget geo: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 10 .
+    void:triples 22 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_sf_> a void:Linkset ;
     rdfs:label "Linkset: atlantgis_dataset - Simple Features Vocabulary (sf:)"@en ;
@@ -79,7 +79,7 @@
     void:linkPredicate rdf:type ;
     void:objectsTarget skos: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 23 .
+    void:triples 11 .
 
 <http://atlantgis.squirrel.link/data/brick_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary https://brickschema.org/schema/Brick# in atlantgis_dataset" ;
@@ -120,7 +120,7 @@
 <http://atlantgis.squirrel.link/data/geo_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.opengis.net/ont/geosparql# in atlantgis_dataset" ;
     voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    voaf:occurrences 20 .
+    voaf:occurrences 44 .
 
 <http://atlantgis.squirrel.link/data/odrl_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/odrl/2/ in atlantgis_dataset" ;
@@ -165,7 +165,7 @@
 <http://atlantgis.squirrel.link/data/skos_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2004/02/skos/core# in atlantgis_dataset" ;
     voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    voaf:occurrences 46 .
+    voaf:occurrences 22 .
 
 <http://atlantgis.squirrel.link/data/sosa_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/sosa/ in atlantgis_dataset" ;
@@ -248,7 +248,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Collection> a void:Dataset ;
     rdfs:label "Class Partition: Collection"@en ;
     void:class skos:Collection ;
-    void:entities 23 .
+    void:entities 11 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Feature> a void:Dataset ;
     rdfs:label "Class Partition: Feature"@en ;
@@ -257,7 +257,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_FeatureCollection> a void:Dataset ;
     rdfs:label "Class Partition: FeatureCollection"@en ;
     void:class geo:FeatureCollection ;
-    void:entities 2 .
+    void:entities 14 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Find> a void:Dataset ;
     rdfs:label "Class Partition: Find"@en ;
@@ -666,7 +666,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_subClassOf> a void:Dataset ;
     rdfs:label "Property Partition: subClassOf"@en ;
     void:property rdfs:subClassOf ;
-    void:triples 17 .
+    void:triples 18 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_temperSize> a void:Dataset ;
     rdfs:label "Property Partition: temperSize"@en ;
@@ -909,13 +909,13 @@ skos: a voaf:Vocabulary ;
     vext:averageSubjectIRILength 62 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 105384 ;
+    vext:distinctIRIReferences 105385 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 105384 ;
+    vext:distinctRDFNodes 105385 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-26T19:05:00"^^xsd:dateTime ;
+    dcterms:modified "2024-04-27T01:25:30"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -981,7 +981,7 @@ skos: a voaf:Vocabulary ;
     void:classes 37 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
     void:distinctObjects 75552 ;
-    void:distinctSubjects 29785 ;
+    void:distinctSubjects 29786 ;
     void:entities 29750 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
@@ -1033,7 +1033,7 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
-    void:triples 167104 ;
+    void:triples 167105 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,
