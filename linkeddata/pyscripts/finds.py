@@ -106,7 +106,7 @@ for index, row in data.iterrows():
     lines.append("find:find"+str(i)+"_weight_value " + "rdfs:label " + "'Measurement Value of weight of find "+str(i)+"'@en .")
     lines.append("find:find"+str(i)+"_weight_value " + "rdfs:label " + "'Messwert des Gewichts von Fund "+str(i)+"'@de .")
     lines.append("find:find"+str(i)+"_weight"+"_value " + "om:hasNumericalValue" + " " "'" + str(row['wt']) + "'^^xsd:double"+" .")
-    lines.append("find:find"+str(i)+"_weight"+"_value " + "om:unit" + " " "om:gram .")
+    lines.append("find:find"+str(i)+"_weight"+"_value " + "om:hasUnit" + " " "om:gram .")
     lines.append("find:" + str(i) + " " + "atlantgis:temperSize" + " " + "atlantgis:tsize_" + str(row['temperSize']) + ".")
     if row['size'] != -1:
         lines.append("find:find" + str(i) + " " + "atlantgis:size" + " " + sizemap[str(row['size'])] + ".")
@@ -119,7 +119,7 @@ for index, row in data.iterrows():
         lines.append("find:find"+str(i)+"_wall_value " + "rdf:type " + "om:Quantity .")
         lines.append("find:find"+str(i)+"_wall_value " + "rdfs:label " + "'Measurement Value of wall thickness of find "+str(i)+"'@en .")
         lines.append("find:find"+str(i)+"_wall_value " + "rdfs:label " + "'Messwert der Wandungsdicke von ´Fund "+str(i)+"'@de .")
-        lines.append("find:find"+str(i)+"_wall_value " + "om:unit " + "om:centimetre .")
+        lines.append("find:find"+str(i)+"_wall_value " + "om:hasUnit " + "om:centimetre .")
         lines.append("find:find"+str(i)+"_wall_value " + "om:hasNumericalValue " + "'" + str(row['wall']) + "'^^xsd:double .")
     if row['muendungsD'] != -1.0:
         lines.append("find:find" + str(i) + " " + "atlantgis:muendungsD" + " " + "find:find"+str(i)+"_muendungsD .")
@@ -130,7 +130,7 @@ for index, row in data.iterrows():
         lines.append("find:find"+str(i)+"_muendungsD_value " + "rdf:type " + "om:Quantity .")
         lines.append("find:find"+str(i)+"_muendungsD_value " + "rdfs:label " + "'Messwert des Mündungsdurchmessers von Fund "+str(i)+"'@de .")
         lines.append("find:find"+str(i)+"_muendungsD_value " + "rdfs:label " + "'Measurement Value of orifice diameter of find "+str(i)+"'@en .")
-        lines.append("find:find"+str(i)+"_muendungsD_value " + "om:unit " + "om:centimetre .")
+        lines.append("find:find"+str(i)+"_muendungsD_value " + "om:hasUnit " + "om:centimetre .")
         lines.append("find:find"+str(i)+"_muendungsD_value " + "om:hasNumericalValue " + "'" + str(row['muendungsD']) + "'^^xsd:double .")
     if row['muendungsH'] != -1.0:
         lines.append("find:find" + str(i) + " " + "atlantgis:muendungsH" + " " + "find:find"+str(i)+"_muendungsH .")
@@ -140,7 +140,7 @@ for index, row in data.iterrows():
         lines.append("find:find"+str(i)+"_muendungsH " + "om:hasValue " + "find:find"+str(i)+"_muendungsH_value .")
         lines.append("find:find"+str(i)+"_muendungsH_value " + "rdfs:label " + "'Messwert der Höhe des Mündungsdurchmessers von Fund " + str(i) + " (cm)'@de .")
         lines.append("find:find"+str(i)+"_muendungsH_value " + "rdfs:label " + "'Measurement Value of the height of the orifice diameter of find " + str(i) + " (cm)'@en .")
-        lines.append("find:find"+str(i)+"_muendungsH_value " + "om:unit " + "om:centimetre .")
+        lines.append("find:find"+str(i)+"_muendungsH_value " + "om:hasUnit " + "om:centimetre .")
         lines.append("find:find"+str(i)+"_muendungsH_value " + "om:hasNumericalValue " + "'" + str(row['muendungsH']) + "'^^xsd:double .")
         lines.append("find:find"+str(i)+"_muendungsH_value " + "rdf:type " + "om:Quantity .")
     if row['minD'] != -1.0:
@@ -152,7 +152,7 @@ for index, row in data.iterrows():
         lines.append("find:find"+str(i)+"_minD_value " + "rdf:type " + "om:Quantity .")
         lines.append("find:find"+str(i)+"_minD_value " + "rdfs:label " + "'Messwert für den minimalen Durchmesser von Fund " + str(i) + " (cm)'@de .")
         lines.append("find:find"+str(i)+"_minD_value " + "rdfs:label " + "'Measurement value for the minimum diameter of find " + str(i) + " (cm)'@en .")
-        lines.append("find:find"+str(i)+"_minD_value " + "om:unit " + "om:centimetre .")
+        lines.append("find:find"+str(i)+"_minD_value " + "om:hasUnit " + "om:centimetre .")
         lines.append("find:find"+str(i)+"_minD_value " + "om:hasNumericalValue " + "'" + str(row['minD']) + "'^^xsd:double .")
     if row['minD_H'] != -1.0:
         lines.append("find:find" + str(i) + " " + "atlantgis:minD_H" + " " + "find:find" + str(i) + "_minD_H .")
@@ -164,7 +164,7 @@ for index, row in data.iterrows():
         lines.append("find:find" + str(i) + "_minD_H_value " + "rdfs:label" + " " + "'Measurement value of the height of the minimum diameter of find " + str(i) + "'@en .")
         lines.append("find:find" + str(i) + "_minD_H_value " + "rdfs:label" + " " + "'Messwert der Höhe des minimalen Durchmessers von Fund " + str(i) +"'@de .")
         lines.append("find:find" + str(i) + "_minD_H_value " + "om:hasNumericalValue" + " " + "'" + str(row['minD_H']) + "'^^xsd:double .")
-        lines.append("find:find" + str(i) + "_minD_H_value " + "om:unit" + " om:centimetre .")
+        lines.append("find:find" + str(i) + "_minD_H_value " + "om:hasUnit" + " om:centimetre .")
     if row['maxD'] != -1.0:
         lines.append("find:find" + str(i) + " " + "atlantgis:maxD" + " find:find"+str(i)+"_maxD .")
         lines.append("find:find"+str(i)+"_maxD " + "rdf:type" + " om:Measure .")
@@ -174,7 +174,7 @@ for index, row in data.iterrows():
         lines.append("find:find" + str(i) + "_maxD_value " + "rdf:type" + " " + "om:Quantity .")
         lines.append("find:find"+str(i)+"_maxD_value " + "rdfs:label " + "'Messwert des maximalen Durchmessers von Fund " + str(i) + "'@de .")
         lines.append("find:find"+str(i)+"_maxD_value " + "rdfs:label " + "'Measurement value of the maximum diameter of find " + str(i) + "'@en .")
-        lines.append("find:find"+str(i)+"_maxD_value " + "om:unit " + "om:centimetre .")
+        lines.append("find:find"+str(i)+"_maxD_value " + "om:hasUnit " + "om:centimetre .")
         lines.append("find:find"+str(i)+"_maxD_value " + "om:hasNumericalValue " + "'" + str(row['maxD']) + "'^^xsd:double .")
     if row['maxD_H'] != -1.0:
         lines.append("find:find" + str(i) + " " + "atlantgis:maxD_H" + " find:find"+str(i)+"_maxD_H .")
@@ -186,7 +186,7 @@ for index, row in data.iterrows():
         lines.append("find:find" + str(i) + "_maxD_H_value " + "rdfs:label" + " " + "'Measurement value of height of the maximum diameter of find " + str(i) + "'@en .")
         lines.append("find:find" + str(i) + "_maxD_H_value " + "rdfs:label" + " " + "'Messwert der Höhe des maximalen Durchmessers von Fund " + str(i) +"'@de .")
         lines.append("find:find" + str(i) + "_maxD_H_value " + "om:hasNumericalValue" + " " + "'" + str(row['maxD_H']) + "'^^xsd:double .")
-        lines.append("find:find" + str(i) + "_maxD_H_value " + "om:unit" + " om:centimetre .")
+        lines.append("find:find" + str(i) + "_maxD_H_value " + "om:hasUnit" + " om:centimetre .")
     if row['bodenD'] != -1.0:
         lines.append("find:find" + str(i) + " " + "atlantgis:bodenD" + " find:find"+str(i)+"_bodenD .")
         lines.append("find:find" + str(i) + "_bodenD " + "rdf:type" + " " + "om:Measure .")
@@ -197,7 +197,7 @@ for index, row in data.iterrows():
         lines.append("find:find" + str(i) + "_bodenD_value " + "rdfs:label" + " " + "'Messwert für den Bodendurchmesser von Fund " + str(i) +"'@de .")
         lines.append("find:find" + str(i) + "_bodenD_value " + "rdfs:label" + " " + "'Measurement value for the diameter of the bottom of find " + str(i) + "'@en .")
         lines.append("find:find" + str(i) + "_bodenD_value " + "om:hasNumericalValue" + " " + "'" + str(row['bodenD']) + "'^^xsd:double .")
-        lines.append("find:find" + str(i) + "_bodenD_value " + "om:unit" + " om:centimetre .")
+        lines.append("find:find" + str(i) + "_bodenD_value " + "om:hasUnit" + " om:centimetre .")
     lines.append("")
     i += 1
 
