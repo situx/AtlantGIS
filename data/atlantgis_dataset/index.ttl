@@ -45,14 +45,14 @@
     ns1:distinctBlankNodes 0,
         1 ;
     ns1:distinctIRIReferences 257,
-        105387 ;
+        105378 ;
     ns1:distinctLiterals 0 ;
     ns1:distinctRDFNodes 258,
-        105387 ;
+        105378 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-27T02:38:24"^^xsd:dateTime ;
+    dcterms:modified "2024-04-29T17:11:38"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -62,6 +62,7 @@
     vann:preferredNamespacePrefix "atlantgis"^^xsd:string ;
     vann:preferredNamespaceUri "http://atlantgis.squirrel.link/data/"^^xsd:anyURI ;
     void:classPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_ArchaeologicalSite>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Archont>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Building>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_City>,
@@ -86,7 +87,17 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Period>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Point>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Polygon>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1554231>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1701967>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q17334923>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q193379>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q3001793>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q355304>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q6428674>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q757267>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q839954>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Quantity>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Resource>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SherdType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Silber>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Site>,
@@ -95,18 +106,20 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObjectCollection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Square>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Stream>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Style>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemperSizeCategory>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemporalEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselFunction>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Voronoi>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Weight>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
-    void:classes 11,
+    void:classes 36,
         37 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
     void:distinctObjects 136,
-        75552 ;
+        75543 ;
     void:distinctSubjects 100,
         29788 ;
     void:entities 2,
@@ -178,7 +191,7 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
-    void:triples 327,
+    void:triples 326,
         167107 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary ns1:,

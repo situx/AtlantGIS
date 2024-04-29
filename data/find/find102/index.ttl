@@ -16,7 +16,7 @@
     ns1:sherd ns1:sherdtype_R ;
     ns1:site <http://atlantgis.squirrel.link/data/site/H> ;
     ns1:size ns1:size_less120120 ;
-    ns1:vesselShape <http://atlantgis.squirrel.link/data/vesseltype/7> ;
+    ns1:vesselShape <http://atlantgis.squirrel.link/data/vesseltype/vesseltype7> ;
     ns1:wall <http://atlantgis.squirrel.link/data/find/find102_wall> ;
     ns1:weight <http://atlantgis.squirrel.link/data/find/find102_weight> ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .

@@ -217,6 +217,10 @@
     void:class <http://atlantgis.squirrel.link/ontology#ArchaeologicalSite> ;
     void:entities 122 .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Archont> a void:Dataset ;
+    rdfs:label "Class Partition: Archont"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#Archont> .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes> a void:Dataset ;
     rdfs:label "Class Partition: AtlantGIS_Classes"@en ;
     void:class <http://atlantgis.squirrel.link/ontology#AtlantGIS_Classes> .
@@ -260,6 +264,10 @@
     void:class <http://atlantgis.squirrel.link/ontology#Find> ;
     void:entities 136 .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_FindingsEntity> a void:Dataset ;
+    rdfs:label "Class Partition: FindingsEntity"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#FindingsEntity> .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Geometry> a void:Dataset ;
     rdfs:label "Class Partition: Geometry"@en ;
     void:class geo:Geometry .
@@ -278,6 +286,10 @@
     rdfs:label "Class Partition: Green"@en ;
     void:class <http://atlantgis.squirrel.link/ontology#Green> ;
     void:entities 40 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_HumanEntity> a void:Dataset ;
+    rdfs:label "Class Partition: HumanEntity"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#HumanEntity> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_LandType> a void:Dataset ;
     rdfs:label "Class Partition: LandType"@en ;
@@ -324,10 +336,50 @@
     void:class <http://www.opengis.net/ont/sf#Polygon> ;
     void:entities 13477 .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1554231> a void:Dataset ;
+    rdfs:label "Class Partition: Q1554231"@en ;
+    void:class <http://www.wikidata.org/entity/Q1554231> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1701967> a void:Dataset ;
+    rdfs:label "Class Partition: Q1701967"@en ;
+    void:class <http://www.wikidata.org/entity/Q1701967> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q17334923> a void:Dataset ;
+    rdfs:label "Class Partition: Q17334923"@en ;
+    void:class <http://www.wikidata.org/entity/Q17334923> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q193379> a void:Dataset ;
+    rdfs:label "Class Partition: Q193379"@en ;
+    void:class <http://www.wikidata.org/entity/Q193379> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q3001793> a void:Dataset ;
+    rdfs:label "Class Partition: Q3001793"@en ;
+    void:class <http://www.wikidata.org/entity/Q3001793> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q355304> a void:Dataset ;
+    rdfs:label "Class Partition: Q355304"@en ;
+    void:class <http://www.wikidata.org/entity/Q355304> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q6428674> a void:Dataset ;
+    rdfs:label "Class Partition: Q6428674"@en ;
+    void:class <http://www.wikidata.org/entity/Q6428674> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q757267> a void:Dataset ;
+    rdfs:label "Class Partition: Q757267"@en ;
+    void:class <http://www.wikidata.org/entity/Q757267> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Q839954> a void:Dataset ;
+    rdfs:label "Class Partition: Q839954"@en ;
+    void:class <http://www.wikidata.org/entity/Q839954> .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Quantity> a void:Dataset ;
     rdfs:label "Class Partition: Quantity"@en ;
     void:class <http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity> ;
     void:entities 823 .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Resource> a void:Dataset ;
+    rdfs:label "Class Partition: Resource"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#Resource> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_SherdType> a void:Dataset ;
     rdfs:label "Class Partition: SherdType"@en ;
@@ -347,6 +399,10 @@
     rdfs:label "Class Partition: SizeCategory"@en ;
     void:class <http://atlantgis.squirrel.link/ontology#SizeCategory> .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObject> a void:Dataset ;
+    rdfs:label "Class Partition: SpatialObject"@en ;
+    void:class geo:SpatialObject .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObjectCollection> a void:Dataset ;
     rdfs:label "Class Partition: SpatialObjectCollection"@en ;
     void:class geo:SpatialObjectCollection .
@@ -361,9 +417,17 @@
     void:class <http://atlantgis.squirrel.link/ontology#Stream> ;
     void:entities 119 .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_Style> a void:Dataset ;
+    rdfs:label "Class Partition: Style"@en ;
+    void:class geo:Style .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemperSizeCategory> a void:Dataset ;
     rdfs:label "Class Partition: TemperSizeCategory"@en ;
     void:class <http://atlantgis.squirrel.link/ontology#TemperSizeCategory> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_TemporalEntity> a void:Dataset ;
+    rdfs:label "Class Partition: TemporalEntity"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#TemporalEntity> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselFunction> a void:Dataset ;
     rdfs:label "Class Partition: VesselFunction"@en ;
@@ -845,13 +909,13 @@ skos: a voaf:Vocabulary ;
     vext:averageSubjectIRILength 62 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 105387 ;
+    vext:distinctIRIReferences 105378 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 105387 ;
+    vext:distinctRDFNodes 105378 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-27T02:38:24"^^xsd:dateTime ;
+    dcterms:modified "2024-04-29T17:11:38"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -861,6 +925,7 @@ skos: a voaf:Vocabulary ;
     vann:preferredNamespacePrefix "atlantgis"^^xsd:string ;
     vann:preferredNamespaceUri "http://atlantgis.squirrel.link/data/"^^xsd:anyURI ;
     void:classPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_ArchaeologicalSite>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Archont>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Building>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_City>,
@@ -870,10 +935,12 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Feature>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_FeatureCollection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Find>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_FindingsEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Geometry>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_GeometryCollection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Goldkupfererz>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Green>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_HumanEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_LandType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_LineString>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Measure>,
@@ -883,15 +950,28 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Period>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Point>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Polygon>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1554231>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1701967>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q17334923>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q193379>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q3001793>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q355304>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q6428674>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q757267>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q839954>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Quantity>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Resource>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SherdType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Silber>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Site>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SizeCategory>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObject>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObjectCollection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Square>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Stream>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Style>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemperSizeCategory>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemporalEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselFunction>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Voronoi>,
@@ -900,7 +980,7 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
     void:classes 37 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
-    void:distinctObjects 75552 ;
+    void:distinctObjects 75543 ;
     void:distinctSubjects 29788 ;
     void:entities 29750 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
