@@ -1,0 +1,12 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_madeBySensor> a void:Dataset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Property Partition: madeBySensor"@en ;
+    void:property sosa:madeBySensor ;
+    void:triples 122 .
+

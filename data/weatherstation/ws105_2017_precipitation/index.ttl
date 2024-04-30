@@ -1,0 +1,12 @@
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/weatherstation/ws105_2017_precipitation> a <http://www.w3.org/ns/ldp#Resource>,
+        sosa:Observation,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    sosa:hasResult <http://atlantgis.squirrel.link/data/weatherstation/ws105_2017_precipitation_result> ;
+    sosa:madeBySensor <http://atlantgis.squirrel.link/data/weatherstation/ws105> ;
+    sosa:observedProperty <http://atlantgis.squirrel.link/ontology#Precipitation> ;
+    sosa:phenomenonTime <http://atlantgis.squirrel.link/data/weatherstation/ws105_2017_precipitation_phentime> .
+
