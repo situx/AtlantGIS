@@ -7,5 +7,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "AltlantGIS Resource 30"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    geo:hasGeometry <http://atlantgis.squirrel.link/data/resource/resource30> .
+    geo:hasGeometry <http://atlantgis.squirrel.link/data/resource/resource30_geom> .
 
