@@ -49,7 +49,7 @@
         4,
         132,
         136,
-        13976 .
+        14098 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.ontology-of-units-of-measure.org_resource_om-2_> a void:Linkset ;
     rdfs:label "Linkset: atlantgis_dataset - Ontology of Units of Measurement (om:)"@en ;
@@ -65,7 +65,7 @@
     void:linkPredicate rdf:type ;
     void:objectsTarget geo: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 22 .
+    void:triples 23 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_sf_> a void:Linkset ;
     rdfs:label "Linkset: atlantgis_dataset - Simple Features Vocabulary (sf:)"@en ;
@@ -120,7 +120,7 @@
 <http://atlantgis.squirrel.link/data/geo_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.opengis.net/ont/geosparql# in atlantgis_dataset" ;
     voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    voaf:occurrences 44 .
+    voaf:occurrences 46 .
 
 <http://atlantgis.squirrel.link/data/odrl_atlantgis_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/odrl/2/ in atlantgis_dataset" ;
@@ -257,7 +257,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_FeatureCollection> a void:Dataset ;
     rdfs:label "Class Partition: FeatureCollection"@en ;
     void:class geo:FeatureCollection ;
-    void:entities 14 .
+    void:entities 15 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Find> a void:Dataset ;
     rdfs:label "Class Partition: Find"@en ;
@@ -444,6 +444,11 @@
     void:class <http://atlantgis.squirrel.link/ontology#Voronoi> ;
     void:entities 10 .
 
+<http://atlantgis.squirrel.link/data/atlantgis_dataset_WeatherStation> a void:Dataset ;
+    rdfs:label "Class Partition: WeatherStation"@en ;
+    void:class <http://atlantgis.squirrel.link/ontology#WeatherStation> ;
+    void:entities 122 .
+
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_Weight> a void:Dataset ;
     rdfs:label "Class Partition: Weight"@en ;
     void:class <http://www.ontology-of-units-of-measure.org/resource/om-2/Weight> ;
@@ -476,7 +481,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_asWKT> a void:Dataset ;
     rdfs:label "Property Partition: asWKT"@en ;
     void:property geo:asWKT ;
-    void:triples 13804 .
+    void:triples 13927 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_before> a void:Dataset ;
     rdfs:label "Property Partition: before"@en ;
@@ -536,7 +541,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasGeometry> a void:Dataset ;
     rdfs:label "Property Partition: hasGeometry"@en ;
     void:property geo:hasGeometry ;
-    void:triples 13803 .
+    void:triples 13925 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_hasGreen> a void:Dataset ;
     rdfs:label "Property Partition: hasGreen"@en ;
@@ -586,7 +591,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 31564 .
+    void:triples 32053 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_maxD> a void:Dataset ;
     rdfs:label "Property Partition: maxD"@en ;
@@ -601,7 +606,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_member> a void:Dataset ;
     rdfs:label "Property Partition: member"@en ;
     void:property rdfs:member ;
-    void:triples 29601 .
+    void:triples 29723 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_minD> a void:Dataset ;
     rdfs:label "Property Partition: minD"@en ;
@@ -671,7 +676,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_subClassOf> a void:Dataset ;
     rdfs:label "Property Partition: subClassOf"@en ;
     void:property rdfs:subClassOf ;
-    void:triples 27 .
+    void:triples 28 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_temperSize> a void:Dataset ;
     rdfs:label "Property Partition: temperSize"@en ;
@@ -681,7 +686,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_type> a void:Dataset ;
     rdfs:label "Property Partition: type"@en ;
     void:property rdf:type ;
-    void:triples 29633 .
+    void:triples 29756 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape> a void:Dataset ;
     rdfs:label "Property Partition: vesselShape"@en ;
@@ -909,13 +914,13 @@ skos: a voaf:Vocabulary ;
     vext:averageSubjectIRILength 62 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 105388 ;
+    vext:distinctIRIReferences 106491 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 105388 ;
+    vext:distinctRDFNodes 106491 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-30T14:29:46"^^xsd:dateTime ;
+    dcterms:modified "2024-04-30T15:12:35"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -975,14 +980,15 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselFunction>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Voronoi>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_WeatherStation>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Weight>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
-    void:classes 39 ;
+    void:classes 40 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
-    void:distinctObjects 75546 ;
-    void:distinctSubjects 29795 ;
-    void:entities 29750 ;
+    void:distinctObjects 76403 ;
+    void:distinctSubjects 30041 ;
+    void:entities 29995 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 47 ;
@@ -1033,7 +1039,7 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
-    void:triples 167114 ;
+    void:triples 168339 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,
