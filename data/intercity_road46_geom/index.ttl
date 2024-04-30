@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/intercity_road46_geom> a <http://www.opengis.net/ont/sf#LineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Intercity Road 46: road Geometrie"@de,
+        "Intercity Road 46: road Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "MULTILINESTRING ((488453.1722086384 3939787.125694116, 487953.0381723068 3939145.36095704, 487609.6692519994 3938639.343600798, 487591.5972035622 3938169.47034143, 487718.1015426228 3937844.17346956, 487627.7413004367 3937627.308888313, 487103.6518957569 3937247.795871131, 486832.5711691985 3936922.498999261, 486619.0589095716 3936284.919694844, 486508.9476351465 3936296.670655231, 486440.6754521615 3936256.510547593))"^^geo:wktLiteral .
+

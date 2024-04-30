@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/intercity_road10_geom> a <http://www.opengis.net/ont/sf#LineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Intercity Road 10: Autochthon Autochthon_Streets Geometrie"@de,
+        "Intercity Road 10: Autochthon Autochthon_Streets Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "MULTILINESTRING ((458767.005278816 3951541.358745616, 458827.6712366198 3951552.503351523, 458907.6295974632 3951565.046576098, 458971.6665076134 3951572.073002546, 459028.372087352 3951576.731944047, 459119.4099348974 3951573.595258519, 459216.2056312091 3951642.110607421, 459311.0635099597 3951719.12496422, 459417.6414803849 3951707.323808996, 459540.857320461 3951675.091556232, 459773.3429548922 3951705.040659531, 459985.5030209725 3951642.295787625, 460121.0138102844 3951556.755460939, 460210.6078256811 3951551.452220264, 460318.3837690302 3951592.507496668, 460483.6712168385 3951650.722373775, 460880.1286440692 3951578.681161466, 461183.5222654273 3951362.98820544, 461705.0339176045 3951510.123692969))"^^geo:wktLiteral .
+

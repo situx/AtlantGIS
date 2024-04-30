@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/intercity_road23_geom> a <http://www.opengis.net/ont/sf#LineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Intercity Road 23: Euaimon Euaimon_Streets Geometrie"@de,
+        "Intercity Road 23: Euaimon Euaimon_Streets Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "MULTILINESTRING ((466147.5213689515 3925474.750012385, 466177.3760905634 3925494.119023795, 466201.9627279784 3925525.07685705, 466212.4868246103 3925571.979917544, 466249.9134791726 3925606.232216065, 466325.0485861953 3925623.775429968, 466408.6011481276 3925720.423640347, 466484.6330164983 3925880.733719676, 466554.3165902928 3925983.352638274, 466617.3316144091 3926055.650937018, 466701.513803788 3926167.696779804, 466874.1451148842 3926290.303307743, 467051.491452931 3926383.023845322, 467237.896005413 3926538.964059796, 467491.172015768 3926576.352713374, 468163.1814690656 3926895.006304872))"^^geo:wktLiteral .
+

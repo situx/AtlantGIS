@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/intercity_road33_geom> a <http://www.opengis.net/ont/sf#LineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Intercity Road 33: Eumelos Eumelos_Streets Geometrie"@de,
+        "Intercity Road 33: Eumelos Eumelos_Streets Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "MULTILINESTRING ((491391.3185786926 3941439.614654567, 491332.1076746802 3941341.70513716, 491388.374905502 3941179.476199619))"^^geo:wktLiteral .
+

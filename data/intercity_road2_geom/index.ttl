@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/intercity_road2_geom> a <http://www.opengis.net/ont/sf#LineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Intercity Road 2: Atlas Atlas_Streets Geometrie"@de,
+        "Intercity Road 2: Atlas Atlas_Streets Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "MULTILINESTRING ((472531.5136368282 3939599.8812947, 472474.1657721323 3939537.760679623, 472398.5510776427 3939558.368350522, 472313.9826030743 3939579.089242385, 472230.4140462636 3939637.93045782, 472119.141551025 3939678.988647087, 472033.9328947871 3939663.105844572, 471974.5759595211 3939615.713166714, 471943.3290625981 3939551.707477355, 471868.6634333769 3939500.433020558, 471722.8767572518 3939468.333924862, 471498.8207507508 3939549.005575194, 471247.1473418709 3939659.122826369, 471069.6338068268 3939629.622411485, 470849.4921758755 3939627.027484971, 470708.1908630456 3939715.720146095, 470513.8685464214 3939865.390397692, 470357.4504342542 3939781.667700374))"^^geo:wktLiteral .
+
