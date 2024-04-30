@@ -8,5 +8,5 @@
     rdfs:label "Intercity Road 34: Eumelos Eumelos_Streets Geometrie"@de,
         "Intercity Road 34: Eumelos Eumelos_Streets Geometry"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    geo:asWKT "MULTILINESTRING ((491199.766676825 3941468.040968924, 491318.0653829309 3941481.701846311))"^^geo:wktLiteral .
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> LINESTRING (491199.766676825 3941468.040968924, 491318.0653829309 3941481.701846311)"^^geo:wktLiteral .
 

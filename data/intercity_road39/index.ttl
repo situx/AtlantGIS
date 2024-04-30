@@ -5,8 +5,8 @@
 <http://atlantgis.squirrel.link/data/intercity_road39> a <http://atlantgis.squirrel.link/ontology#Road>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Intercity Road 39: road"@en,
-        "Überlandstraße 39: road"@en ;
+    rdfs:label "Überlandstraße 39: road"@de,
+        "Intercity Road 39: road"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/intercity_road39_geom> .
 

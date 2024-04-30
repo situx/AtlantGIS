@@ -5,8 +5,8 @@
 <http://atlantgis.squirrel.link/data/intercity_road11> a <http://atlantgis.squirrel.link/ontology#Road>,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Intercity Road 11: Azaes Azaes_Streets"@en,
-        "Überlandstraße 11: Azaes Azaes_Streets"@en ;
+    rdfs:label "Überlandstraße 11: Azaes Azaes_Streets"@de,
+        "Intercity Road 11: Azaes Azaes_Streets"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/intercity_road11_geom> .
 
