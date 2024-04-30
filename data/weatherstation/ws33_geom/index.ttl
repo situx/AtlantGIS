@@ -7,5 +7,5 @@
     rdfs:label "AtlantGIS Wetterstation 33 Geometrie"@de,
         "AtlantGIS Weather Station 33 Geometry"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    geo:asWKT "POINT(35.687548 -15.521054)"^^geo:wktLiteral .
+    geo:asWKT "POINT(-15.521054 35.687548)"^^geo:wktLiteral .
 

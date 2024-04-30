@@ -8,5 +8,5 @@
     rdfs:label "Occurrences of vocabulary http://www.opengis.net/ont/geosparql# in atlantgis_dataset" ;
     ns1:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     ns1:occurrences 2,
-        48 .
+        46 .
 

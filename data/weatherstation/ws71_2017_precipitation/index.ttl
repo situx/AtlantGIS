@@ -1,9 +1,12 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
 <http://atlantgis.squirrel.link/data/weatherstation/ws71_2017_precipitation> a <http://www.w3.org/ns/ldp#Resource>,
         sosa:Observation,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Beobachtung der Niederschlagsmenge an Wetterstation 71 im Jahr 2017"@de,
+        "Observation of precipitation value at weather station 71 in the year 2017"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     sosa:hasResult <http://atlantgis.squirrel.link/data/weatherstation/ws71_2017_precipitation_result> ;
     sosa:madeBySensor <http://atlantgis.squirrel.link/data/weatherstation/ws71> ;
