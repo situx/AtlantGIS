@@ -671,7 +671,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_subClassOf> a void:Dataset ;
     rdfs:label "Property Partition: subClassOf"@en ;
     void:property rdfs:subClassOf ;
-    void:triples 20 .
+    void:triples 27 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_temperSize> a void:Dataset ;
     rdfs:label "Property Partition: temperSize"@en ;
@@ -909,13 +909,13 @@ skos: a voaf:Vocabulary ;
     vext:averageSubjectIRILength 62 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 105378 ;
+    vext:distinctIRIReferences 105388 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 105378 ;
+    vext:distinctRDFNodes 105388 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-04-30T13:53:21"^^xsd:dateTime ;
+    dcterms:modified "2024-04-30T14:29:46"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -978,10 +978,10 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Weight>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
-    void:classes 37 ;
+    void:classes 39 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
-    void:distinctObjects 75543 ;
-    void:distinctSubjects 29788 ;
+    void:distinctObjects 75546 ;
+    void:distinctSubjects 29795 ;
     void:entities 29750 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
@@ -1033,7 +1033,7 @@ skos: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
-    void:triples 167107 ;
+    void:triples 167114 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,
