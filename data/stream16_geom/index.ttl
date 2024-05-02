@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/stream16_geom> a <http://www.opengis.net/ont/sf#LineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Strom 16 Geometrie"@de,
+        "Stream 16 Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> LINESTRING (-14.80811308 35.66515936, -14.8089695 35.66586097, -14.80896616 35.66726145, -14.81067907 35.66866464, -14.8106708 35.67216584, -14.81152731 35.67286743, -14.81152566 35.67356767, -14.8123822 35.67426925, -14.81237892 35.67566973, -14.81409206 35.67707287, -14.81408394 35.68057406, -14.81322406 35.68127298, -14.81321917 35.68337369, -14.80977941 35.68616927, -14.80977608 35.68756975, -14.80891609 35.68826863, -14.80891108 35.69036934, -14.81148119 35.69247411, -14.81147955 35.69317435, -14.81233629 35.69387593, -14.81233465 35.69457617, -14.81319141 35.69527774, -14.81318651 35.69737845, -14.81404332 35.69808002, -14.81404169 35.69878025, -14.81489852 35.69948182, -14.81575697 35.69948313, -14.81661382 35.70018468)"^^geo:wktLiteral .
+

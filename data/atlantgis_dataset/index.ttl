@@ -36,7 +36,7 @@
     rdfs:label "atlantgis_dataset"@en ;
     ns1:averageLiteralLength 0 ;
     ns1:averageObjectIRILength 47,
-        76 ;
+        73 ;
     ns1:averagePropertyIRILength 43,
         46 ;
     ns1:averageSubjectIRILength 35,
@@ -45,14 +45,14 @@
     ns1:distinctBlankNodes 0,
         1 ;
     ns1:distinctIRIReferences 257,
-        108573 ;
+        109239 ;
     ns1:distinctLiterals 0 ;
     ns1:distinctRDFNodes 258,
-        108573 ;
+        109239 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-05-01T02:17:55"^^xsd:dateTime ;
+    dcterms:modified "2024-05-02T23:22:41"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -62,7 +62,6 @@
     vann:preferredNamespacePrefix "atlantgis"^^xsd:string ;
     vann:preferredNamespaceUri "http://atlantgis.squirrel.link/data/"^^xsd:anyURI ;
     void:classPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_ArchaeologicalSite>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Archont>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Building>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_City>,
@@ -75,14 +74,12 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_FindingsEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Geometry>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_GeometryCollection>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Goldkupfererz>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Green>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_HumanEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Instant>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_LandType>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_LineString>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Measure>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiLineString>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPoint>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPolygon>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Observation>,
@@ -90,45 +87,31 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Period>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Point>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Polygon>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1554231>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1701967>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q17334923>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q193379>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q3001793>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q355304>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q6428674>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q757267>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q839954>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Quantity>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Resource>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Road>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SherdType>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Silber>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Site>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SizeCategory>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObject>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObjectCollection>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Square>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Stream>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Style>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemperSizeCategory>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemporalEntity>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselFunction>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselType>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Voronoi>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_WeatherStation>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Weight>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
-    void:classes 36,
-        44 ;
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes> ;
+    void:classes 11,
+        38 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
     void:distinctObjects 136,
-        77992 ;
+        78530 ;
     void:distinctSubjects 100,
-        30529 ;
+        30657 ;
     void:entities 2,
-        30480 ;
+        30609 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 21,
@@ -146,6 +129,7 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_creator>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_definition>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_description>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_discharge>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_domain>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_equivalentClass>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_feature>,
@@ -189,7 +173,6 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_size>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_standard>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_cat>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_discharge>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_stream_value>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_style>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_subClassOf>,
@@ -201,8 +184,8 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
-    void:triples 326,
-        171733 ;
+    void:triples 327,
+        172839 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,

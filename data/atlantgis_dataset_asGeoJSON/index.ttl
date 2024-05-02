@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: asGeoJSON"@en ;
     void:property geo:asGeoJSON ;
-    void:triples 317 .
+    void:triples 177 .
 

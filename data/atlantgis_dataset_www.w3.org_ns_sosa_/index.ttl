@@ -11,5 +11,5 @@
     void:linkPredicate rdf:type ;
     void:objectsTarget sosa: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 123 .
+    void:triples 124 .
 

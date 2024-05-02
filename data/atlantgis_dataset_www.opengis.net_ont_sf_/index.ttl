@@ -10,5 +10,5 @@
     void:linkPredicate rdf:type ;
     void:objectsTarget <http://www.opengis.net/ont/sf#> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 13881 .
+    void:triples 13820 .
 

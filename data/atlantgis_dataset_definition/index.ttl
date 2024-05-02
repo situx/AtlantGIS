@@ -8,5 +8,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: definition"@en ;
     void:property skos:definition ;
-    void:triples 60 .
+    void:triples 58 .
 

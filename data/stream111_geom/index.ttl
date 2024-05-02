@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/stream111_geom> a <http://www.opengis.net/ont/sf#LineString>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Strom 111 Geometrie"@de,
+        "Stream 111 Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> LINESTRING (-15.21499527 35.39972235, -15.21670954 35.40111983, -15.21671703 35.40392092, -15.21757422 35.40461965, -15.21842953 35.4046181, -15.21928674 35.40531682, -15.21929622 35.40881817, -15.22015348 35.40951689, -15.2201611 35.41231796, -15.22101841 35.41301667, -15.22102032 35.41371694, -15.22273499 35.41511433, -15.22273884 35.41651487, -15.2244536 35.41791224, -15.22447302 35.42491491)"^^geo:wktLiteral .
+

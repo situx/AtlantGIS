@@ -7,5 +7,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: hasUnit"@en ;
     void:property <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> ;
-    void:triples 945 .
+    void:triples 1064 .
 

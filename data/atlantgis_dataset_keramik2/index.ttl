@@ -7,5 +7,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: keramik2"@en ;
     void:property <http://atlantgis.squirrel.link/ontology#keramik2> ;
-    void:triples 10 .
+    void:triples 9 .
 

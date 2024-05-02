@@ -7,5 +7,5 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: stream_cat"@en ;
     void:property <http://atlantgis.squirrel.link/ontology#stream_cat> ;
-    void:triples 129 .
+    void:triples 119 .
 

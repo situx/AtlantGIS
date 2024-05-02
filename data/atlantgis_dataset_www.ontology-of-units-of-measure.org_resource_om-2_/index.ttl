@@ -11,6 +11,6 @@
         rdf:type ;
     void:objectsTarget <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    void:triples 945,
-        1904 .
+    void:triples 1064,
+        2142 .
 

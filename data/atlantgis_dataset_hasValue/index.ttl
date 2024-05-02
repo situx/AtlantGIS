@@ -10,5 +10,5 @@
     void:property <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue>,
         owl:hasValue ;
     void:triples 1,
-        823 .
+        942 .
 

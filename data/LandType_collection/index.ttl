@@ -43,10 +43,8 @@
         <http://atlantgis.squirrel.link/data/landtype/landtype39>,
         <http://atlantgis.squirrel.link/data/landtype/landtype4>,
         <http://atlantgis.squirrel.link/data/landtype/landtype40>,
-        <http://atlantgis.squirrel.link/data/landtype/landtype41>,
         <http://atlantgis.squirrel.link/data/landtype/landtype5>,
         <http://atlantgis.squirrel.link/data/landtype/landtype6>,
         <http://atlantgis.squirrel.link/data/landtype/landtype7>,
-        <http://atlantgis.squirrel.link/data/landtype/landtype8>,
-        <http://atlantgis.squirrel.link/data/landtype/landtype9> .
+        <http://atlantgis.squirrel.link/data/landtype/landtype8> .
 

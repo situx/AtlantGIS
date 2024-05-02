@@ -14,5 +14,5 @@
     void:objectsTarget geo: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     void:triples 1,
-        24 .
+        20 .
 
