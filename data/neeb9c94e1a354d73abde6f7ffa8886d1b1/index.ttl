@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+[] a owl:Restriction,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    owl:hasValue <http://atlantgis.squirrel.link/ontology#CoastLine_Style> ;
+    owl:onProperty geo:style .
+

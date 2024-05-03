@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://atlantgis.squirrel.link/data/fortress10_geom> a <http://www.opengis.net/ont/sf#Point>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Fortress 10 Geometrie"@de,
+        "Fortress 10 Geometry"@en ;
+    void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
+    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (500767.235893841 3929270.06203679)"^^geo:wktLiteral .
+
