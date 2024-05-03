@@ -240,202 +240,202 @@
 <http://atlantgis.squirrel.link/data/periods/20> time:after <http://atlantgis.squirrel.link/data/period/17> ;
     time:before <http://atlantgis.squirrel.link/data/period/25> .
 
-<http://atlantgis.squirrel.link/data/fortress0_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress0_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 0 Geometrie"@de,
         "Fortress 0 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (519938.373226642 3941694.97490091)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress10_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress10_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 10 Geometrie"@de,
         "Fortress 10 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (500767.235893841 3929270.06203679)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress11_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress11_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 11 Geometrie"@de,
         "Fortress 11 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (482802.371921047 3935883.18258355)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress12_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress12_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 12 Geometrie"@de,
         "Fortress 12 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (489027.50028189 3934454.5776991)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress13_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress13_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 13 Geometrie"@de,
         "Fortress 13 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (483700.209804206 3942672.75340556)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress14_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress14_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 14 Geometrie"@de,
         "Fortress 14 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (521625.426996187 3935878.11441459)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress15_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress15_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 15 Geometrie"@de,
         "Fortress 15 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (473563.388965915 3921123.17676046)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress16_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress16_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 16 Geometrie"@de,
         "Fortress 16 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (474302.982904952 3924266.61476889)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress17_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress17_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 17 Geometrie"@de,
         "Fortress 17 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (488882.450817281 3921936.72380222)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress18_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress18_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 18 Geometrie"@de,
         "Fortress 18 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (483292.838630426 3920132.03339296)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress19_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress19_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 19 Geometrie"@de,
         "Fortress 19 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (504313.635774353 3924950.18834125)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress1_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress1_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 1 Geometrie"@de,
         "Fortress 1 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (522609.38894905 3943682.37282444)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress20_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress20_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 20 Geometrie"@de,
         "Fortress 20 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (464945.67462657 3947376.63736179)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress21_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress21_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 21 Geometrie"@de,
         "Fortress 21 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (470924.275183662 3947289.59965363)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress22_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress22_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 22 Geometrie"@de,
         "Fortress 22 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (464715.248897885 3939134.93503949)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress23_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress23_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 23 Geometrie"@de,
         "Fortress 23 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (447320.774627893 3952804.79206342)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress24_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress24_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 24 Geometrie"@de,
         "Fortress 24 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (460604.090697275 3940550.36331381)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress25_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress25_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 25 Geometrie"@de,
         "Fortress 25 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (472315.101048518 3935940.68321037)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress26_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress26_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 26 Geometrie"@de,
         "Fortress 26 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (469227.417866821 3933115.94852236)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress27_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress27_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 27 Geometrie"@de,
         "Fortress 27 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (455778.523413244 3926850.16436266)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress28_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress28_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 28 Geometrie"@de,
         "Fortress 28 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (460578.43601838 3934945.03941731)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress29_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress29_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 29 Geometrie"@de,
         "Fortress 29 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (469914.862639922 3952262.70633475)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress2_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress2_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 2 Geometrie"@de,
         "Fortress 2 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (510649.281986364 3940420.52547111)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress30_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress30_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 30 Geometrie"@de,
         "Fortress 30 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (443978.601607099 3942397.2098174)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress31_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress31_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 31 Geometrie"@de,
         "Fortress 31 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (443078.702516815 3935133.44522041)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress32_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress32_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 32 Geometrie"@de,
         "Fortress 32 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (497611.659147219 3940562.34541825)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress33_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress33_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 33 Geometrie"@de,
         "Fortress 33 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (489018.536266299 3937820.22033011)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress34_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress34_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 34 Geometrie"@de,
         "Fortress 34 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (502539.820394552 3941476.28728008)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress35_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress35_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 35 Geometrie"@de,
         "Fortress 35 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (503454.161113324 3936563.23815482)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress36_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress36_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 36 Geometrie"@de,
         "Fortress 36 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (505927.414028233 3930254.05888387)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress37_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress37_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 37 Geometrie"@de,
         "Fortress 37 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (513330.529137224 3933076.18225434)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress38_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress38_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 38 Geometrie"@de,
         "Fortress 38 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (481527.931868705 3942857.05298814)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress3_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress3_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 3 Geometrie"@de,
         "Fortress 3 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (537520.691136296 3938168.29753667)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress4_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress4_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 4 Geometrie"@de,
         "Fortress 4 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (516706.998499932 3927373.13605778)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress5_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress5_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 5 Geometrie"@de,
         "Fortress 5 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (502417.000570488 3948031.50262889)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress6_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress6_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 6 Geometrie"@de,
         "Fortress 6 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (492125.942004269 3949238.43927213)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress7_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress7_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 7 Geometrie"@de,
         "Fortress 7 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (499809.384362948 3938755.9070864)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress8_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress8_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 8 Geometrie"@de,
         "Fortress 8 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (515819.00287701 3935884.48829851)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/fortress9_geom> a <http://www.opengis.net/ont/sf#LineString> ;
+<http://atlantgis.squirrel.link/data/fortress9_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 9 Geometrie"@de,
         "Fortress 9 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (501562.417783607 3924116.74264929)"^^geo:wktLiteral .
 
 <http://atlantgis.squirrel.link/ontology#Fortress> rdfs:subClassOf geo:Feature .
 
-<http://www.opengis.net/ont/sf#LineString> rdfs:subClassOf geo:Geometry .
+<http://www.opengis.net/ont/sf#Point> rdfs:subClassOf geo:Geometry .
 
