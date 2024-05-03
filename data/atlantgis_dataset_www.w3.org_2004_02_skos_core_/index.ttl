@@ -7,7 +7,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.w3.org_2004_02_skos_core_> a void:Linkset,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Linkset: atlantgis_dataset - skos:"@en ;
+    rdfs:label "Linkset: atlantgis_dataset - "@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget skos: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
