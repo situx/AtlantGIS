@@ -8,7 +8,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_geosparql_> a void:Linkset,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - The GeoSPARQL Ontology (gsp:)"@en ;
     void:linkPredicate rdf:type,
         owl:onProperty ;
     void:objectsTarget geo: ;

@@ -6,7 +6,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_sf_> a void:Linkset,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - Simple Features Vocabulary (sf:)"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget <http://www.opengis.net/ont/sf#> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;

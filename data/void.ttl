@@ -36,7 +36,7 @@
     voaf:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_atlantgis.squirrel.link_ontology_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - :"@en ;
     void:linkPredicate <http://atlantgis.squirrel.link/ontology#archont>,
         <http://atlantgis.squirrel.link/ontology#sherd>,
         <http://atlantgis.squirrel.link/ontology#size>,
@@ -54,7 +54,7 @@
         14151 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.ontology-of-units-of-measure.org_resource_om-2_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - Ontology of Units of Measurement (om:)"@en ;
     void:linkPredicate <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit>,
         rdf:type ;
     void:objectsTarget <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
@@ -63,35 +63,35 @@
         2142 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_geosparql_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - The GeoSPARQL Ontology (gsp:)"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget geo: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     void:triples 21 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.opengis.net_ont_sf_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - Simple Features Vocabulary (sf:)"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget <http://www.opengis.net/ont/sf#> ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     void:triples 13859 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.w3.org_2004_02_skos_core_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - skos:"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget skos: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     void:triples 10 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.w3.org_2006_time_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - time:"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget time: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
     void:triples 122 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.w3.org_ns_sosa_> a void:Linkset ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - Sensor, Observation, Sample, and Actuator (SOSA) Ontology (sosa:)"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget sosa: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
@@ -983,7 +983,7 @@ sosa: a voaf:Vocabulary ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-05-03T19:10:29"^^xsd:dateTime ;
+    dcterms:modified "2024-05-03T22:34:28"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,

@@ -9,7 +9,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_atlantgis.squirrel.link_ontology_> a void:Linkset,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - :"@en ;
     void:linkPredicate <http://atlantgis.squirrel.link/ontology#archont>,
         <http://atlantgis.squirrel.link/ontology#sherd>,
         <http://atlantgis.squirrel.link/ontology#size>,

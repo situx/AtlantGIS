@@ -7,7 +7,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_www.w3.org_2002_07_owl_> a void:Linkset,
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Linkset: atlantgis_dataset - "@en ;
+    rdfs:label "Linkset: atlantgis_dataset - Web Ontology Language 2 Vocabulary (owl:)"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget owl: ;
     void:subjectsTarget <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
