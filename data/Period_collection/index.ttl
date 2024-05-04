@@ -11,5 +11,6 @@
         <http://atlantgis.squirrel.link/data/period/period13>,
         <http://atlantgis.squirrel.link/data/period/period17>,
         <http://atlantgis.squirrel.link/data/period/period25>,
-        <http://atlantgis.squirrel.link/data/period/period5> .
+        <http://atlantgis.squirrel.link/data/period/period5>,
+        <http://atlantgis.squirrel.link/data/periods/period20> .
 

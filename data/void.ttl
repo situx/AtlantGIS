@@ -983,7 +983,7 @@ sosa: a voaf:Vocabulary ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-05-04T01:37:15"^^xsd:dateTime ;
+    dcterms:modified "2024-05-04T02:00:40"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,

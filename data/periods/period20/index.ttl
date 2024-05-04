@@ -2,7 +2,8 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://atlantgis.squirrel.link/data/periods/period20> a <http://www.w3.org/ns/ldp#Resource>,
+<http://atlantgis.squirrel.link/data/periods/period20> a <http://atlantgis.squirrel.link/ontology#Period>,
+        <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Fortress 20"@de,
         "Time Period 20"@en ;
