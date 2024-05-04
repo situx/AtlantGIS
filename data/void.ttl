@@ -644,7 +644,7 @@
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 33761 .
+    void:triples 33762 .
 
 <http://atlantgis.squirrel.link/data/atlantgis_dataset_madeBySensor> a void:Dataset ;
     rdfs:label "Property Partition: madeBySensor"@en ;
@@ -977,13 +977,13 @@ sosa: a voaf:Vocabulary ;
     vext:averageSubjectIRILength 62 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 109560 ;
+    vext:distinctIRIReferences 109558 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 109560 ;
+    vext:distinctRDFNodes 109558 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-05-03T23:23:49"^^xsd:dateTime ;
+    dcterms:modified "2024-05-04T00:00:00"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -1054,7 +1054,7 @@ sosa: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
     void:classes 39 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
-    void:distinctObjects 78770 ;
+    void:distinctObjects 78768 ;
     void:distinctSubjects 30738 ;
     void:entities 30689 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
@@ -1112,7 +1112,7 @@ sosa: a voaf:Vocabulary ;
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_vesselShape>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_wall>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_weight> ;
-    void:triples 173354 ;
+    void:triples 173355 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,

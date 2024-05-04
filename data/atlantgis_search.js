@@ -32760,7 +32760,7 @@ var search={
   "Strom 99": "http://atlantgis.squirrel.link/data/stream99",
   "Strom 99 Geometrie": "http://atlantgis.squirrel.link/data/stream99_geom",
   "Symposionsgef\u00e4\u00df": "http://atlantgis.squirrel.link/data/vesselfunction/vesselfunc_Symposionsgef\u00e4\u00df",
-  "Time Period 20": "http://atlantgis.squirrel.link/data/fortress20",
+  "Time Period 20": "http://atlantgis.squirrel.link/data/periods/period20",
   "Vessel": "http://atlantgis.squirrel.link/data/nonns_sherdtype_G.html",
   "VesselFunction Instances Collection": "http://atlantgis.squirrel.link/data/VesselFunction_collection",
   "VesselType Instances Collection": "http://atlantgis.squirrel.link/data/VesselType_collection",

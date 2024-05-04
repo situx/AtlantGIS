@@ -8,5 +8,5 @@
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
     void:triples 67,
-        33761 .
+        33762 .
 
