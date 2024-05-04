@@ -46,7 +46,7 @@
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2024-05-04T01:26:35"^^xsd:dateTime ;
+    dcterms:modified "2024-05-04T01:37:15"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -55,14 +55,43 @@
     dcterms:title "atlantgis_dataset"@en ;
     vann:preferredNamespacePrefix "atlantgis"^^xsd:string ;
     vann:preferredNamespaceUri "http://atlantgis.squirrel.link/data/"^^xsd:anyURI ;
-    void:classPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes>,
+    void:classPartition <http://atlantgis.squirrel.link/data/atlantgis_dataset_ArchaeologicalSite>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Archont>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_AtlantGIS_Classes>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_CoastLine>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Feature>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Find>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_FindingsEntity>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Geometry>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Goldkupfererz>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_HumanEntity>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_LandType>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiLineString>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPoint>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_MultiPolygon>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Period>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Point>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1554231>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q1701967>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q17334923>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q193379>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q3001793>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q355304>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q6428674>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q757267>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Q839954>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Resource>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Silber>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_Site>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_SpatialObject>,
-        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes> ;
-    void:classes 11 ;
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Stream>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Style>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_TemporalEntity>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_VesselType>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Voronoi>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Wikidata_Classes>,
+        <http://atlantgis.squirrel.link/data/atlantgis_dataset_Zinn> ;
+    void:classes 36 ;
     void:dataDump <https://situx.github.io/AtlantGIS/data//index.ttl> ;
     void:distinctObjects 136 ;
     void:distinctSubjects 100 ;
@@ -91,7 +120,7 @@
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_subject>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_type>,
         <http://atlantgis.squirrel.link/data/atlantgis_dataset_versionInfo> ;
-    void:triples 327 ;
+    void:triples 326 ;
     void:uriSpace "http://atlantgis.squirrel.link/data/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,

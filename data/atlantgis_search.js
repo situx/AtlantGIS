@@ -28035,6 +28035,7 @@ var search={
   "City Wall of AtlantGIS City Mneseus": "http://atlantgis.squirrel.link/data/Mneseus_city_wall",
   "CityWall Instances Collection": "http://atlantgis.squirrel.link/data/CityWall_collection",
   "CoastLine Instances Collection": "http://atlantgis.squirrel.link/data/CoastLine_collection",
+  "CoastLine_Style": "http://atlantgis.squirrel.link/data/nonns_CoastLine_Style.html",
   "Diameter of the bottom of find 0 (cm)": "http://atlantgis.squirrel.link/data/find/find0_bodenD",
   "Diameter of the bottom of find 107 (cm)": "http://atlantgis.squirrel.link/data/find/find107_bodenD",
   "Diameter of the bottom of find 126 (cm)": "http://atlantgis.squirrel.link/data/find/find126_bodenD",
