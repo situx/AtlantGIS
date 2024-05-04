@@ -6,240 +6,235 @@
     rdfs:label "Fortress 0"@de,
         "Fortress 0"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress0_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress1> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 1"@de,
         "Fortress 1"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress1_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress10> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 10"@de,
         "Fortress 10"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress10_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress11> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 11"@de,
         "Fortress 11"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress11_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress12> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 12"@de,
         "Fortress 12"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress12_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress13> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 13"@de,
         "Fortress 13"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress13_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress14> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 14"@de,
         "Fortress 14"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress14_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress15> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 15"@de,
         "Fortress 15"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress15_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress16> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 16"@de,
         "Fortress 16"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress16_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress17> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 17"@de,
         "Fortress 17"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress17_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress18> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 18"@de,
         "Fortress 18"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress18_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress19> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 19"@de,
         "Fortress 19"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress19_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress2> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 2"@de,
         "Fortress 2"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress2_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress20> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 20"@de,
         "Fortress 20"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress20_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress21> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 21"@de,
         "Fortress 21"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress21_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress22> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 22"@de,
         "Fortress 22"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress22_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress23> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 23"@de,
         "Fortress 23"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress23_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress24> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 24"@de,
         "Fortress 24"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress24_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress25> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 25"@de,
         "Fortress 25"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress25_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress26> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 26"@de,
         "Fortress 26"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress26_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress27> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 27"@de,
         "Fortress 27"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress27_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress28> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 28"@de,
         "Fortress 28"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress28_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress29> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 29"@de,
         "Fortress 29"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress29_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress3> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 3"@de,
         "Fortress 3"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress3_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress30> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 30"@de,
         "Fortress 30"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress30_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress31> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 31"@de,
         "Fortress 31"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress31_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress32> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 32"@de,
         "Fortress 32"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress32_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress33> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 33"@de,
         "Fortress 33"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress33_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress34> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 34"@de,
         "Fortress 34"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress34_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress35> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 35"@de,
         "Fortress 35"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress35_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress36> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 36"@de,
         "Fortress 36"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress36_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress37> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 37"@de,
         "Fortress 37"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress37_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress38> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 38"@de,
         "Fortress 38"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress38_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress4> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 4"@de,
         "Fortress 4"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress4_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress5> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 5"@de,
         "Fortress 5"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress5_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress6> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 6"@de,
         "Fortress 6"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress6_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress7> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 7"@de,
         "Fortress 7"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress7_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress8> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 8"@de,
         "Fortress 8"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress8_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress9> a <http://atlantgis.squirrel.link/ontology#Fortress> ;
     rdfs:label "Fortress 9"@de,
         "Fortress 9"@en ;
     geo:hasGeometry <http://atlantgis.squirrel.link/data/fortress9_geom> ;
-    time:hasTime <http://atlantgis.squirrel.link/data/period/period20> .
-
-<http://atlantgis.squirrel.link/data/periods/period20> rdfs:label "Fortress 20"@de,
-        "Time Period 20"@en ;
-    time:after <http://atlantgis.squirrel.link/data/period/period17> ;
-    time:before <http://atlantgis.squirrel.link/data/period/period25> .
+    time:hasTime <http://atlantgis.squirrel.link/data/periods/period20> .
 
 <http://atlantgis.squirrel.link/data/fortress0_geom> a <http://www.opengis.net/ont/sf#Point> ;
     rdfs:label "Fortress 0 Geometrie"@de,
@@ -435,6 +430,11 @@
     rdfs:label "Fortress 9 Geometrie"@de,
         "Fortress 9 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (501562.417783607 3924116.74264929)"^^geo:wktLiteral .
+
+<http://atlantgis.squirrel.link/data/periods/period20> rdfs:label "Fortress 20"@de,
+        "Time Period 20"@en ;
+    time:after <http://atlantgis.squirrel.link/data/periods/period17> ;
+    time:before <http://atlantgis.squirrel.link/data/periods/period25> .
 
 <http://atlantgis.squirrel.link/ontology#Fortress> rdfs:subClassOf geo:Feature .
 
