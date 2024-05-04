@@ -16,6 +16,7 @@ for rd in roads:
     g.add((URIRef(datans+"fortress"+str(featcounter)),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Fortress "+str(featcounter),lang="de")))
     g.add((URIRef(datans+"fortress"+str(featcounter)),URIRef("http://www.w3.org/2006/time#hasTime"),URIRef(datans+"periods/period"+str(rd["period"]))))
     g.add((URIRef(datans+"periods/period"+str(rd["period"])),URIRef("http://www.w3.org/2006/time#after"),URIRef(datans+"periods/period17")))
+    g.add((URIRef(datans+"periods/period"+str(rd["period"])),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(ontns+"Period")))
     g.add((URIRef(datans+"periods/period"+str(rd["period"])),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Time Period "+str(rd["period"]),lang="en")))
     g.add((URIRef(datans+"periods/period"+str(rd["period"])),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Fortress "+str(rd["period"]),lang="de")))
     g.add((URIRef(datans+"periods/period"+str(rd["period"])),URIRef("http://www.w3.org/2006/time#before"),URIRef(datans+"periods/period25")))

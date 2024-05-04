@@ -431,7 +431,8 @@
         "Fortress 9 Geometry"@en ;
     geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> POINT (501562.417783607 3924116.74264929)"^^geo:wktLiteral .
 
-<http://atlantgis.squirrel.link/data/periods/period20> rdfs:label "Fortress 20"@de,
+<http://atlantgis.squirrel.link/data/periods/period20> a <http://atlantgis.squirrel.link/ontology#Period> ;
+    rdfs:label "Fortress 20"@de,
         "Time Period 20"@en ;
     time:after <http://atlantgis.squirrel.link/data/periods/period17> ;
     time:before <http://atlantgis.squirrel.link/data/periods/period25> .
