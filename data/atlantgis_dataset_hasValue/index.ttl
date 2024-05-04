@@ -7,8 +7,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: hasValue"@en ;
-    void:property <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue>,
-        owl:hasValue ;
-    void:triples 1,
-        942 .
+    void:property owl:hasValue ;
+    void:triples 1 .
 
