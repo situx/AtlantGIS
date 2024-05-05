@@ -33,7 +33,7 @@ for rd in roads["features"]:
         g.add((URIRef(datans+"stream"+str(featcounter)+"_geom"),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/ont/sf#LineString")))
         g.add((URIRef(datans+"stream"+str(featcounter)+"_geom"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Stream "+str(featcounter)+" Geometry",lang="en")))
         g.add((URIRef(datans+"stream"+str(featcounter)+"_geom"),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("Strom "+str(featcounter)+" Geometrie",lang="de")))
-        g.add((URIRef(datans+"stream"+str(featcounter)+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal("<http://www.opengis.net/def/crs/EPSG/0/32628> "+str(wktgeom).replace("MULTILINESTRING ((","LINESTRING (").replace("))",")"),datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))  
+        g.add((URIRef(datans+"stream"+str(featcounter)+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asWKT"),Literal(str(wktgeom).replace("MULTILINESTRING ((","LINESTRING (").replace("))",")"),datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))  
     featcounter+=1
 g.add((URIRef("http://www.opengis.net/ont/sf#LineString"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
 g.add((URIRef(ontns+"Sream"),URIRef("http://www.w3.org/2000/01/rdf-schema#subClassOf"),URIRef("http://www.opengis.net/ont/geosparql#Feature")))
