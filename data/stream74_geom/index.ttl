@@ -8,5 +8,5 @@
     rdfs:label "Strom 74 Geometrie"@de,
         "Stream 74 Geometry"@en ;
     void:inDataset <http://atlantgis.squirrel.link/data/atlantgis_dataset> ;
-    geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/32628> LINESTRING (-14.6611235 35.52268488, -14.66111467 35.52478563)"^^geo:wktLiteral .
+    geo:asWKT "LINESTRING (-14.6611235 35.52268488, -14.66111467 35.52478563)"^^geo:wktLiteral .
 
