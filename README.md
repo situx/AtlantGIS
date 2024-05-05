@@ -1,5 +1,5 @@
 AtlantGIS 
-========= 
+=========  
   
 Faked GIS-Datasets, simulating an island in the Atlantic for educational purposes in using GIS in archaeology. All AtlantGIS data are published under a CC-BY-SA 4.0 license.
          
