@@ -93,15 +93,15 @@ function parseWKTStringToJSON(wktstring){
     for(coordset of wktstring.split(",")){
         curobject={}
         coords=coordset.trim().split(" ")
-        console.log(coordset)
-        console.log(coords)
+        //console.log(coordset)
+        //console.log(coords)
         if(coords.length==3){
             resjson.push({"x":parseFloat(coords[0]),"y":parseFloat(coords[1]),"z":parseFloat(coords[2])})
         }else{
             resjson.push({"x":parseFloat(coords[0]),"y":parseFloat(coords[1])})
         }
     }
-    console.log(resjson)
+    //console.log(resjson)
     return resjson
 }
 
@@ -568,8 +568,8 @@ function exportTGFGDF(sepchar,format){
 
 function setSVGDimensions(){
     $('svg').each(function(i, obj) {
-        console.log(obj)
-        console.log($(obj).children().first()[0])
+        //console.log(obj)
+        //console.log($(obj).children().first()[0])
         if($(obj).attr("viewBox") || $(obj).attr("width") || $(obj).attr("height")){
             return
         }
@@ -579,7 +579,7 @@ function setSVGDimensions(){
         miny=Number.MAX_VALUE
         $(obj).children().each(function(i){
             svgbbox=$(this)[0].getBBox()
-            console.log(svgbbox)
+            //console.log(svgbbox)
             if(svgbbox.x+svgbbox.width>maxx){
                 maxx=svgbbox.x+svgbbox.width
             }
@@ -770,7 +770,7 @@ function rewriteLink(thelink){
     if(!indexpage){
         count=rest.split("/").length-1
     }
-    console.log(count)
+    //console.log(count)
     counter=0
     if (typeof relativedepth !== 'undefined'){
         while(counter<relativedepth){
@@ -788,7 +788,7 @@ function rewriteLink(thelink){
 	if(!rest.includes("nonns_") && !rest.endsWith(".html")){
 		rest+="index.html"
 	}
-    console.log(rest)
+    //console.log(rest)
     return rest
 }
 
@@ -1757,6 +1757,40 @@ function fetchLayersFromList(thelist){
 	return fcolls
 }
 
+function createDropdownOptions(featurecolls){
+    result=new Set()
+    for(coll in featurecolls) {
+        if ("features" in featurecolls[coll]) {
+            for (feat in featurecolls[coll]["features"]) {
+                for (prop in featurecolls[coll]["features"][feat]["properties"]) {
+                    result.add(prop)
+                }
+            }
+        }else if("properties" in featurecolls[coll]){
+            for (prop in coll["properties"]) {
+                 result.add(prop)
+            }
+        }
+    }
+    selectstr="<select>"
+    for(item of Array.from(result).sort()){
+        if((item+"").includes("#")) {
+            selectstr += "<option value=\"" + item + "\">" + item.substring(item.lastIndexOf('#')+1) + "</option>"
+        }else{
+            selectstr += "<option value=\"" + item + "\">" + item.substring(item.lastIndexOf('/')+1) + "</option>"
+        }
+    }
+    selectstr+="</select>"
+    var legend = L.control({position: 'topright'});
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'info legend');
+        div.innerHTML = selectstr;
+        div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
+        return div;
+    };
+    legend.addTo(map);
+}
+
 var centerpoints=[]
 var clustersfrozen=false
 
@@ -1802,10 +1836,16 @@ function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,date
 	var bounds = L.latLngBounds([]);
     first=true
     counter=1
+    featcounter=0
     for(feature of featurecolls){
         var markercluster = L.markerClusterGroup.layerSupport({})
         if(epsg!="" && epsg!="EPSG:4326" && epsg in epsgdefs){
             feature=convertGeoJSON(feature,epsgdefs[epsg],null)
+        }
+        if("features" in feature){
+            featcounter+=feature["features"].length
+        }else{
+            featcounter+=1
         }
         layerr=L.geoJSON.css(feature,{
         pointToLayer: function(feature, latlng){
@@ -1833,6 +1873,7 @@ function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,date
         }
         centerpoints.push(layerr.getBounds().getCenter());
     }
+    createDropdownOptions(featurecolls)
     addFloatingButtonToMap(map, 'Toggle Clusters', ()=>{
         if(clustersfrozen){
             markercluster.enableClustering()
@@ -1842,7 +1883,16 @@ function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,date
         clustersfrozen=!clustersfrozen
     }, 'toggleClusters')
     layercontrol=L.control.layers(baseMaps,overlayMaps).addTo(map)
-	if(dateatt!=null && dateatt!="" && dateatt!="[]" && dateatt!=[]){
+	if(featcounter>1 && dateatt!=null && dateatt!="" && dateatt!="[]" && dateatt!=[]){
+        let textbox   = L.Control.extend({
+            onAdd: function() {
+                var text = L.DomUtil.create('div');
+                text.id = "info_text";
+                text.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                return text;
+            }
+        });
+        new textbox({ position: 'bottomleft' }).addTo(map);
 		var sliderControl = L.control.sliderControl({
 			position: "bottomleft",
 			layer: layerr,
@@ -1851,7 +1901,16 @@ function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,date
 			showAllOnStart: true,
 			timeAttribute: dateatt
 		});
+        //console.log(sliderControl.options)
 		map.addControl(sliderControl);
+        sliderControl.options.markers.sort(function (a, b) {
+            try{
+                return (parseFloat(a.feature.properties[dateatt]) > parseFloat(b.feature.properties[dateatt]));
+            }catch(e){
+                return (new Date(a.feature.properties[dateatt]) > new Date(b.feature.properties[dateatt]));
+            }
+
+        });
 		sliderControl.startSlider();
 	}
     markercluster.addTo(map)
