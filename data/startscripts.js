@@ -1619,19 +1619,43 @@ function toggleFullScreen(elementid,threejs=false) {
 }
 
 function restyleLayer(propertyName,geojsonLayer) {
-    geojsonLayer.eachLayer(function(featureInstanceLayer) {
-        propertyValue = featureInstanceLayer.feature.properties[propertyName];
-        rangesByAttribute=createColorRangeByAttribute(propertyName,geojsonLayer)
-        // Your function that determines a fill color for a particular
-        // property name and value.
-        featureInstanceLayer.onEachFeature(function (feature, layer) {
-            feature.setStyle({
-                fillColor: getColor(feature,propertyName, propertyValue,rangesByAttribute),
-                fillOpacity: 0.8,
-                weight: 0.5
-            });
-        });
+    //geojsonLayer.eachLayer(function(featureInstanceLayer) {
+    propertyValue = geojsonLayer["features"][0]["properties"][propertyName];
+    rangesByAttribute=createColorRangeByAttribute(propertyName,geojsonLayer)
+    console.log(rangesByAttribute)
+    document.getElementById("legend").innerHTML=rangestoLegendHTML(rangesByAttribute)
+    // Your function that determines a fill color for a particular
+    // property name and value.
+    console.log(layerr)
+    layerr.setStyle(function(layer) {
+        return {
+            fillColor: getColor(layer.feature, propertyName, propertyValue, rangesByAttribute),
+            fillOpacity:0.8,
+            weight:0.5
+        }
     });
+}
+
+
+function rangestoLegendHTML(rangesByAttribute){
+    result="<table style=\"border: 1px solid\">"
+    console.log(rangesByAttribute)
+    for(rang in rangesByAttribute){
+        console.log(rang)
+        for(therange of rangesByAttribute[rang]){
+             result+="<tr><td><span style=\"width: 20px;height: 20px;border: 5px solid rgba(0, 0, 0, .2);background-color:"+therange["color"]+"\"></span>"
+            if("min" in therange && "max" in therange){
+                result+=therange["min"]+" - "+therange["max"]
+            }else{
+                result+=therange["label"]
+            }
+            result+="</td>"
+        }
+
+    }
+    console.log(result)
+    result+="</table>"
+    return result
 }
 
 colors=["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00","#cab2d6","#6a3d9a","#ffff99","#b15928"]
@@ -1640,16 +1664,23 @@ function getColor(feature,propertyName,propertyValue,rangesByAttribute){
     if(propertyName=="None"){
         return "#000000"
     }
-    colorcounter=0
-    hasseen=new Set()
-    if(propertyName in feature){
-        if(!(feature[propertyName] in hasseen)){
-            hasseen.add(feature[propertyName])
-            colorcounter+=1
-            return
+    if(!isNaN(propertyValue)){
+        propNum=Number(propertyValue)
+        for(rang in rangesByAttribute){
+            if("min" in rangesByAttribute[rang] && "max" in rangesByAttribute[rang]){
+                if(propNum>=rangesByAttribute[rang]["min"] && propNum<=rangesByAttribute[rang]["max"]){
+                    return rangesByAttribute[rang]["color"];
+                }
+            }
         }
-
+    }else{
+        for(rang in rangesByAttribute){
+            if(rangesByAttribute[rang]["label"]==propertyValue){
+                return rangesByAttribute[rang]["color"]
+            }
+        }
     }
+    return "#000000"
 }
 
 
@@ -1661,9 +1692,10 @@ function createColorRangeByAttribute(propertyName,geojsonlayer){
     var amountofrelevantitems=0
     var stringitems=0
     var numberitems=0
-    var amountofitems=geojsonlayer.size()
+    //var amountofitems=geojsonlayer.size()
     var maxColors=8
-    for(feat of geojsonlayer){
+    rangesByAttribute={}
+    for(feat of geojsonlayer["features"]){
         if(propertyName in feat["properties"]){
             if(!(feat["properties"][propertyName] in valueset)){
                 valueset[feat["properties"][propertyName]]=0
@@ -1693,18 +1725,28 @@ function createColorRangeByAttribute(propertyName,geojsonlayer){
         myrange=maxamount-minamount
         myrangesteps=myrange/maxColors
         curstep=minamount
+        rangesByAttribute[propertyName]=[]
+        stepcounter=0
         while(curstep<maxamount){
             curstepstr=(curstep+"")
-            rangesByAttribute[propertyName]={cursteps:{"min":curstep,"max":curstep+myrangesteps,"label":"["+curstep+"-"+curstep+myrangesteps+"]"}}
+            rangesByAttribute[propertyName].push({"min":curstep,"max":curstep+myrangesteps,"label":"["+curstep+" - "+(curstep+myrangesteps)+"]","color":colors[stepcounter%12]})
             curstep+=myrangesteps
+            stepcounter+=1
         }
     }else if(stringitems<amountofrelevantitems){
-        for(item of valueset){
-            rangesByAttribute[propertyName]={"label":item}
+        stepcounter=0
+        for(item in valueset){
+            rangesByAttribute[propertyName].push({"label":item,"color":colors[stepcounter%12]})
+            stepcounter+=1
         }
-    }else if(stringitems===amountofrelevantitems){
-
+    }else{
+        stepcounter=0
+        for(item in valueset){
+            rangesByAttribute[propertyName].push({"label":item,"color":colors[stepcounter%12]})
+            stepcounter+=1
+        }
     }
+    console.log(rangesByAttribute)
     return rangesByAttribute
 }
 
@@ -1796,27 +1838,34 @@ function createDropdownOptions(featurecolls){
             }
         }
     }
-    selectstr="<select><option value=\"\">None</option>"
-    for(item of Array.from(result).sort()){
-        if((item+"").includes("#")) {
-            selectstr += "<option value=\"" + item + "\">" + item.substring(item.lastIndexOf('#')+1) + "</option>"
-        }else{
-            selectstr += "<option value=\"" + item + "\">" + item.substring(item.lastIndexOf('/')+1) + "</option>"
+    if(result.size>0) {
+        legendstr="<table>"
+        selectstr = "<select id=\"filterdropdown\"><option value=\"\">None</option>"
+        for (item of Array.from(result).sort()) {
+            if ((item + "").includes("#")) {
+                selectstr += "<option value=\"" + item + "\">" + item.substring(item.lastIndexOf('#') + 1) + "</option>"
+            } else {
+                selectstr += "<option value=\"" + item + "\">" + item.substring(item.lastIndexOf('/') + 1) + "</option>"
+            }
+        }
+        selectstr += "</select><div id=\"legend\"></div>"
+        var legend = L.control({position: 'topright'});
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create('div', 'info legend');
+            div.innerHTML = selectstr;
+            div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
+            return div;
+        };
+        legend.addTo(map);
+        document.getElementById("filterdropdown").onchange = function () {
+            restyleLayer(document.getElementById("filterdropdown").value, featurecolls[coll])
         }
     }
-    selectstr+="</select>"
-    var legend = L.control({position: 'topright'});
-    legend.onAdd = function (map) {
-        var div = L.DomUtil.create('div', 'info legend');
-        div.innerHTML = selectstr;
-        div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
-        return div;
-    };
-    legend.addTo(map);
 }
 
 var centerpoints=[]
 var clustersfrozen=false
+var layerr;
 
 function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,dateatt="",ajax=true){
 	if(ajax){
@@ -1907,7 +1956,8 @@ function setupLeaflet(baselayers,epsg,baseMaps,overlayMaps,map,featurecolls,date
         clustersfrozen=!clustersfrozen
     }, 'toggleClusters')
     layercontrol=L.control.layers(baseMaps,overlayMaps).addTo(map)
-	if(featcounter>1 && dateatt!=null && dateatt!="" && dateatt!="[]" && dateatt!=[]){
+	createDropdownOptions(featurecolls)
+    if(featcounter>1 && dateatt!=null && dateatt!="" && dateatt!="[]" && dateatt!=[]){
         let textbox   = L.Control.extend({
             onAdd: function() {
                 var text = L.DomUtil.create('div');

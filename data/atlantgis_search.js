@@ -28278,7 +28278,7 @@ var search={
   "Fortress 2": "http://atlantgis.squirrel.link/data/fortress2",
   "Fortress 2 Geometrie": "http://atlantgis.squirrel.link/data/fortress2_geom",
   "Fortress 2 Geometry": "http://atlantgis.squirrel.link/data/fortress2_geom",
-  "Fortress 20": "http://atlantgis.squirrel.link/data/periods/period20",
+  "Fortress 20": "http://atlantgis.squirrel.link/data/fortress20",
   "Fortress 20 Geometrie": "http://atlantgis.squirrel.link/data/fortress20_geom",
   "Fortress 20 Geometry": "http://atlantgis.squirrel.link/data/fortress20_geom",
   "Fortress 21": "http://atlantgis.squirrel.link/data/fortress21",
